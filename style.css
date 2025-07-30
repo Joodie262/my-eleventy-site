@@ -1,9 +1,6 @@
 /* === Base Styles === */
 body {
   background-color: #e8d5f9; /* light lavender base */
-  background-image: url('/user/images/heart-pattern.gif'); /* tiled background */
-  background-repeat: repeat;
-  background-attachment: fixed;
   color: #2d0034; /* dark plum text */
   font-family: Consolas, 'Lucida Console', Monaco, monospace;
   font-size: 18px;
