@@ -68,5 +68,19 @@
 </p>
     </footer>
   </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteMenu = document.getElementById("site-menu");
+
+  navToggle.addEventListener("click", function () {
+    siteMenu.classList.toggle("show");
+
+    // Update aria-expanded for accessibility
+    const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
+    navToggle.setAttribute("aria-expanded", !expanded);
+  });
+});
+</script>
 </body>
 </html>
