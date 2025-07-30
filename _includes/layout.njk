@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
+</head>
+<body>
+  <div class="site-container">
+    <header>
+      <h1><a href="/">Judy Winsor</a></h1>
+
+<p class="subtitle">Personal website of Judy Winsor</p>
+  </header>
+
+    <nav>
+      <a href="http://read.judywinsor.com">Home</a> |
+   <a href="http://read.judywinsor.com/links">Links</a> |
+  <a href="http://read.judywinsor.com/about/">About</a> |
+  <a href="http://read.judywinsor.com/prompts">Prompts</a> |
+             <a href="https://journal.judywinsor.com/">Journal</a> |
+            <span>
+          <a href="https://jwinsorart.com/"rel=me title="Open my Shopify store" target="_blank">Shop</a> |
+   <a href="http://read.judywinsor.com/about/now">Now</a>             
+              </span>
+</nav>
+<hr>
+
+
+    <main>
+{% if page.url != "/" %}
+  <article class="h-entry">
+<h1 class="p-name">{{ title }}</h1>
+<p>
+    <time class="dt-published" datetime="{{ date | formatDate('yyyy-MM-dd') }}">
+      Date Published: {{ date | formatDate("MMMM d, yyyy") }}
+    </time>
+  </p>
+  <p class="p-author h-card">
+  Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
+</p>
+{% endif %}
+
+<div class="e-content">
+          {{ content | safe }}
+          </div>
+  </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 <a href="https://read.judywinsor.com/about" rel="me">Judy Winsor</a></p>
+      <p>Created with <a href="https://www.11ty.dev/">11ty</a> | <a href="#top">Back to Top</a></p>
+        <p class="p-author h-card" style="display:none;">
+  <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
+</p>
+    </footer>
+  </div>
+</body>
+</html>
