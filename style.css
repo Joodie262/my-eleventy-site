@@ -150,8 +150,9 @@ ul, ol {
 }
 
 strong {
+  font-family: 'JetBrains Mono', monospace;
 background: rgba(255, 255, 255, 0.2);
-font-style: italic;
+font-style: bold;
   padding: 0 0.2em; /* keeps it from touching letters */
   border-radius: 2px; /* optional: soft edges */
 }
