@@ -149,6 +149,14 @@ ul, ol {
   margin: 0.5em 0;
 }
 
+strong {
+  font-family: 'JetBrains Mono', monospace;
+background: rgba(255, 255, 255, 0.2);
+font-style: bold;
+  padding: 0 0.2em; /* keeps it from touching letters */
+  border-radius: 2px; /* optional: soft edges */
+}
+
 /* === Quotes & Code === */
 blockquote {
   border-left: 4px solid #9c67c2;
