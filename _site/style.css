@@ -6,6 +6,7 @@ body {
   font-size: 18px;
   line-height: 1.6;
   padding: 2rem;
+  padding-top: 0.5rem;
 }
 
 main,
@@ -112,6 +113,10 @@ a:hover {
   #site-menu .nav-sep {
     display: none;
   }
+}
+
+header h1 {
+  margin-top: 0; /* kill that giant top gap */
 }
 
 /* === Typography === */
