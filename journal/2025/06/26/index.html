@@ -4,29 +4,41 @@
   <meta charset="UTF-8" />
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css?v=1753916754749">
+  <link rel="stylesheet" href="/style.css?v=1753918715622">
 </head>
 <body>
   <div class="site-container">
     <header>
       <h1><a href="/">Judy Winsor</a></h1>
+      <p class="subtitle">Personal website of Judy Winsor</p>
+    </header>
 
-<p class="subtitle">Personal website of Judy Winsor</p>
-  </header>
+    <!-- NAVIGATION -->
+    <div class="nav">
+      <!-- Hamburger menu button -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+        ☰ Menu
+      </button>
 
-    <nav>
-      <a href="http://read.judywinsor.com">Home</a> |
-   <a href="http://read.judywinsor.com/links">Links</a> |
-  <a href="http://read.judywinsor.com/about/">About</a> |
-  <a href="http://read.judywinsor.com/prompts">Prompts</a> |
-             <a href="https://journal.judywinsor.com/">Journal</a> |
-            <span>
-          <a href="https://jwinsorart.com/"rel=me title="Open my Shopify store" target="_blank">Shop</a> |
-   <a href="http://read.judywinsor.com/about/now">Now</a>             
-              </span>
-</nav>
-<hr>
+      <!-- Menu links -->
+      <div id="site-menu" class="nav-links">
+        <a href="http://read.judywinsor.com">Home</a>
+        <span class="nav-sep">|</span>
+        <a href="http://read.judywinsor.com/links">Links</a>
+        <span class="nav-sep">|</span>
+        <a href="http://read.judywinsor.com/about/">About</a>
+        <span class="nav-sep">|</span>
+        <a href="http://read.judywinsor.com/prompts">Prompts</a>
+        <span class="nav-sep">|</span>
+        <a href="https://journal.judywinsor.com/">Journal</a>
+        <span class="nav-sep">|</span>
+        <a href="https://jwinsorart.com/" rel="me" title="Open my Shopify store" target="_blank">Shop</a>
+        <span class="nav-sep">|</span>
+        <a href="http://read.judywinsor.com/about/now">Now</a>
+      </div>
+    </div>
 
+    <hr>
 
     <main>
 
@@ -95,5 +107,19 @@ I think attempting to truly organize my chaotic bedroom. It’s something I put 
 </p>
     </footer>
   </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteMenu = document.getElementById("site-menu");
+
+  navToggle.addEventListener("click", function () {
+    siteMenu.classList.toggle("show");
+
+    // Update aria-expanded for accessibility
+    const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
+    navToggle.setAttribute("aria-expanded", !expanded);
+  });
+});
+</script>
 </body>
 </html>
