@@ -44,7 +44,7 @@
 {% if page.url != "/" %}
   <article class="h-entry">
 <h1 class="p-name">{{ title }}</h1>
-<p>
+<p class="published">
     <time class="dt-published" datetime="{{ date | formatDate('yyyy-MM-dd') }}">
       Date Published: {{ date | formatDate("MMMM d, yyyy") }}
     </time>

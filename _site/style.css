@@ -119,21 +119,38 @@ header h1 {
   margin-top: 0; /* kill that giant top gap */
 }
 
+div.e-content {
+  margin-top: 0.6em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  border-top: 1px dashed #9c67c2;
+}
+
+.h-feed h1.p-name {
+  margin: 0.1em;
+}
+
+article.h-entry h1.p-name {
+  font-size:x-large;
+  color: #50176e;
+}
+
 /* === Typography === */
 h1, h2, h3, h4, h5 {
   font-family: Consolas, 'Lucida Console', Monaco, monospace;
   color: #7d2da8;
   border-bottom: 1px dashed #9c67c2;
-  padding-bottom: 0.25em;
-  margin-top: 2em;
+  padding-bottom: 0em;
+  margin-top: 0.4em;
+  margin-bottom: 0.1em;
 }
 
-.h1 { font-size: 40px; font-weight: bold; line-height: 1.2; margin: 1em 0; }
-.h2 { font-size: 32px; font-weight: bold; line-height: 1.3; margin: 1em 0; }
-.h3 { font-size: 28px; font-weight: bold; line-height: 1.3; margin: 1em 0; }
-.h4 { font-size: 24px; font-weight: bold; line-height: 1.4; margin: 1em 0; }
-.h5 { font-size: 20px; font-weight: bold; line-height: 1.4; margin: 1em 0; }
-.h6 { font-size: 16px; font-weight: bold; line-height: 1.5; margin: 1em 0; }
+.h1 { font-size: 40px; font-weight: bold; line-height: 1.2; margin: 0.3em 0; }
+.h2 { font-size: 32px; font-weight: bold; line-height: 1.3; margin: 0.3em 0; }
+.h3 { font-size: 28px; font-weight: bold; line-height: 1.3; margin: 0.3em 0; }
+.h4 { font-size: 24px; font-weight: bold; line-height: 1.4; margin: 0.3em 0; }
+.h5 { font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0.3em 0; }
+.h6 { font-size: 16px; font-weight: bold; line-height: 1.5; margin: 0.3em 0; }
 
 /* === Lists === */
 ul, ol {
@@ -151,10 +168,23 @@ ul, ol {
 
 strong {
   font-family: 'JetBrains Mono', monospace;
-background: rgba(255, 255, 255, 0.2);
-font-style: bold;
+  background: rgba(255, 255, 255, 0.2);
+  font-style: bold;
   padding: 0 0.2em; /* keeps it from touching letters */
   border-radius: 2px; /* optional: soft edges */
+}
+
+.datetime,
+small,
+.p-author,
+.dt-published {
+color: color-mix(in srgb, #2d0034 70%, transparent);
+}
+
+p.p-author,
+.published {
+  margin-block-start: 0.2em;
+  margin-block-end: 0.2em;
 }
 
 /* === Quotes & Code === */
