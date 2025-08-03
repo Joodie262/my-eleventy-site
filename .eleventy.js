@@ -5,7 +5,23 @@ const version = String(Date.now()); // new version on each build
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
-  
+
+  // Add the tagList collection
+  eleventyConfig.addCollection("tagList", function (collectionApi) {
+    let tagSet = new Set();
+
+    collectionApi.getAllSorted().forEach(item => {
+      if ("tags" in item.data) {
+        let tags = item.data.tags.filter(
+          tag => !["all", "nav", "post"].includes(tag) // filter unwanted
+        );
+        tags.forEach(tag => tagSet.add(tag.toLowerCase())); // lowercase
+      }
+    });
+
+    return [...tagSet];
+  });
+
 
   // ✅ Custom date formatting filter (fully fixed!)
   eleventyConfig.addFilter("formatDate", (value, format = "MMMM d, yyyy") => {

@@ -52,6 +52,14 @@
   <p class="p-author h-card">
   Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
 </p>
+{% if tags %}
+  <p class="post-tags">
+    {% for tag in tags %}
+      {% set lowerTag = tag | lower %}
+      <a href="/tags/#{{ lowerTag | slug }}">{{ lowerTag }}</a>
+    {% endfor %}
+  </p>
+{% endif %}
 {% endif %}
 
 <div class="e-content">
