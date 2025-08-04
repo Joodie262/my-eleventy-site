@@ -6,7 +6,7 @@ permalink: /tags/index.html
 
 <h1>All Tags</h1>
 
-{% for tag in collections.tagList %}
+{% for tag in collections.tagList | sort %}
   <h2 id="{{ tag | slug }}">{{ tag }}</h2>
   <ul>
     {% for post in collections[tag] %}
