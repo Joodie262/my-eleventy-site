@@ -112,7 +112,7 @@ a:hover {
 
 /* === Menu Wrapper === */
 #site-menu {
-  display: none;              /* always visible on desktop */
+  display: flex;              /* always visible on desktop */
   box-sizing: border-box;     /* include padding & border in width */
   width: 100%;                /* fill its container */
   max-width: 640px;           /* but never exceed 640px total */
@@ -142,9 +142,14 @@ a:hover {
     margin-bottom: 0.25rem;
   }
 
-  #site-menu.show {
-    display: flex;
+  #site-menu {
+    flex-direction: row;
+    display: none;
+  }
+
+  #site-menu.show { 
     flex-direction: column;
+    display: flex;
   }
 
   #site-menu a {
