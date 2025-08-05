@@ -177,6 +177,7 @@ a:hover {
 .nav-toggle-child {
   background-color: inherit;    /* matches the nav background */
   border: none;
+  color:black;
   padding: 0;
   margin: 0;                    /* we’re spacing via the summary gap */
   font-size: 1.1em;
