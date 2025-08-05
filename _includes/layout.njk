@@ -13,32 +13,8 @@
       <p class="subtitle">Personal website of Judy Winsor</p>
     </header>
 
-    <!-- NAVIGATION -->
-    <div class="nav">
-      <!-- Hamburger menu button -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-        ☰ Menu
-      </button>
-
-      <!-- Menu links -->
-      <div id="site-menu" class="nav-links">
-        <a href="http://read.judywinsor.com">Home</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/links">Links</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/about/">About</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/prompts">Prompts</a>
-        <span class="nav-sep">|</span>
-        <a href="https://journal.judywinsor.com/">Journal</a>
-        <span class="nav-sep">|</span>
-        <a href="https://jwinsorart.com/" rel="me" title="Open my Shopify store" target="_blank">Shop</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/about/now">Now</a>
-      </div>
-    </div>
-
-    <hr>
+<!-- New Nav --> 
+{% include "partials/nav-list.njk" %}
 
     <main>
 {% if page.url != "/" %}

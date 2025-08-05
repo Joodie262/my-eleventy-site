@@ -2,6 +2,9 @@
 title: Journal Archive
 layout: layout.njk
 permalink: index.html
+eleventyNavigation:
+  key: "Home"
+  order: 1
 ---
 
 <div class="h-feed">

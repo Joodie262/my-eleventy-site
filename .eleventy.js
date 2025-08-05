@@ -1,9 +1,15 @@
+// 1. all your existing requires
 const { DateTime } = require("luxon");
 const path = require("path");
 const version = String(Date.now()); // new version on each build
 
+// 2. require the nav plugin
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
+  // 3. register the nav plugin
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
   eleventyConfig.addPassthroughCopy("style.css");
 
   // Add the tagList collection

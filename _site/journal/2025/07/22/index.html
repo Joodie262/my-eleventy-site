@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>July 22, 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css?v=1754422278884">
+  <link rel="stylesheet" href="/style.css?v=1754425002732">
 </head>
 <body>
   <div class="site-container">
@@ -13,32 +13,75 @@
       <p class="subtitle">Personal website of Judy Winsor</p>
     </header>
 
-    <!-- NAVIGATION -->
-    <div class="nav">
-      <!-- Hamburger menu button -->
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
-        ☰ Menu
-      </button>
+<!-- New Nav --> 
+<div class="nav">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+    ☰ Menu
+  </button>
 
-      <!-- Menu links -->
-      <div id="site-menu" class="nav-links">
-        <a href="http://read.judywinsor.com">Home</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/links">Links</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/about/">About</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/prompts">Prompts</a>
-        <span class="nav-sep">|</span>
-        <a href="https://journal.judywinsor.com/">Journal</a>
-        <span class="nav-sep">|</span>
-        <a href="https://jwinsorart.com/" rel="me" title="Open my Shopify store" target="_blank">Shop</a>
-        <span class="nav-sep">|</span>
-        <a href="http://read.judywinsor.com/about/now">Now</a>
-      </div>
+  <div id="site-menu" class="nav-links">
+    
+
+    
+      
+        <a href="/">
+          Home
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="http://read.judywinsor.com/links">
+          Links
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="http://read.judywinsor.com/about/">
+          About
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="http://read.judywinsor.com/prompts">
+          Prompts
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <details class="nav-item">
+          <summary>
+            <!-- Toggle button for submenu -->
+            <button class="nav-toggle-child" aria-label="Toggle submenu" onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
+            <!-- Parent page link -->
+            <a href="https://journal.judywinsor.com/"
+               class="nav-parent-link"
+               >
+              Journal
+            </a>
+          </summary>
+          <ul class="dropdown"><li>
+                <a href="/tags/">
+                  Tags
+                </a>
+              </li></ul>
+        </details>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="https://jwinsorart.com/">
+          Shop
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="http://read.judywinsor.com/about/now">
+          Now
+        </a>
+      
     </div>
+</div>
+<hr>
 
-    <hr>
 
     <main>
 
