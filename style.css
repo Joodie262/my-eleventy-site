@@ -50,6 +50,7 @@ a:hover {
 .nav-links .nav-item {
   display: inline-block;
   position: relative;
+  max-width: 640px;
   margin-right: 0.5em;
 }
 
@@ -65,6 +66,7 @@ a:hover {
   display: none !important;
   z-index: 9999;
   position: absolute;
+  max-width: 640px;
   top: 100%;
   left: 0;
   margin: 0.5em 0;
@@ -110,13 +112,21 @@ a:hover {
 
 /* === Menu Wrapper === */
 #site-menu {
-  display: flex; /* Desktop default */
-  gap: 0.5rem;
+  display: flex;              /* always visible on desktop */
+  box-sizing: border-box;     /* include padding & border in width */
+  width: 100%;                /* fill its container */
+  max-width: 640px;           /* but never exceed 640px total */
+  margin: 0 auto;             /* center it */
+  flex-direction: row;        /* horizontal menu */
+  gap: 0.5rem;                /* spacing between links */
+  padding: 0.5rem;
 }
 
 #site-menu a {
   color: #a14cd9;
   text-decoration: underline dotted;
+  flex-shrink: 1;       /* allow links to squeeze */
+  min-width: 0; 
 }
 
 #site-menu a:hover {
@@ -130,14 +140,6 @@ a:hover {
   .nav-toggle {
     display: block;
     margin-bottom: 0.25rem;
-  }
-
-  #site-menu {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    background-color: #f6e8ff;
-    border: 1px solid #9c67c2;
-    padding: 0.5rem;
   }
 
   #site-menu.show {
@@ -160,8 +162,7 @@ a:hover {
 /* === SUMMARY LAYOUT === */
 .nav-links .nav-item summary {
   display: inline-flex;       /* put arrow + link in one row */
-  align-items: center;        /* vertical center */
-  gap: 0.35em;                /* space between arrow and link */
+  align-items: center;        /* vertical center */                /* space between arrow and link */
 }
 
 /* Remove the native triangle marker */
@@ -179,7 +180,7 @@ a:hover {
   border: none;
   color: black;
   padding: 0;
-  margin: 0;                    /* we’re spacing via the summary gap */
+  margin-right: 0.35em;                    /* we’re spacing via the summary gap */
   font-size: 1.1em;
   line-height: 1;               /* prevent extra height */
   cursor: pointer;
