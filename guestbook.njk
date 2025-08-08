@@ -1,0 +1,40 @@
+---
+title: Guestbook
+layout: layout.njk
+permalink: /guestbook/index.html
+---
+
+<h1>Guestbook</h1>
+
+<form id="guestbook-form" method="post" action="https://my-guestbook.winsorj.workers.dev/guestbook/messages">
+  <label>
+    Name:
+    <input type="text" name="name" required minlength="2" maxlength="40" />
+  </label>
+
+  <label>
+    Message:
+    <textarea name="message" required maxlength="500"></textarea>
+  </label>
+
+  <!-- Honeypot field (hidden from humans) -->
+  <div style="position:absolute;left:-9999px;">
+    <label>Leave this blank:
+      <input type="text" name="hp" autocomplete="off" />
+    </label>
+  </div>
+
+  <!-- Timestamp (hidden) -->
+  <input type="hidden" name="ts" id="ts-field" />
+
+  <button type="submit">Sign</button>
+</form>
+
+<p id="status"></p>
+
+<script>
+  document.getElementById("ts-field").value = Date.now();
+  document.getElementById("guestbook-form").addEventListener("submit", function(evt) {
+    document.getElementById("status").textContent = "Submitting...";
+  });
+</script>
