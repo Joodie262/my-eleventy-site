@@ -22,9 +22,10 @@
   <article class="h-entry">
 <h1 class="p-name">{{ title }}</h1>
 <p class="published">
-    <time class="dt-published" datetime="{{ date | formatDate('yyyy-MM-dd') }}">
-      Date Published: {{ date | formatDate("MMMM d, yyyy") }}
-    </time>
+    <time class="dt-published"
+      datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
+  Date Published: {{ date | formatDate("MMMM d, yyyy") }}
+</time>
   </p>
   <p class="p-author h-card">
   Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
