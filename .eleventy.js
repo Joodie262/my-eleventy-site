@@ -1,38 +1,30 @@
-// 1. all your existing requires
+// .eleventy.js
 const { DateTime } = require("luxon");
-const path = require("path");
-const version = String(Date.now()); // new version on each build
-
-// 2. require the nav plugin
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function(eleventyConfig) {
-  // 3. register the nav plugin
+  // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addPassthroughCopy("style.css");
+  // Passthroughs (update to match where your assets actually live)
+  eleventyConfig.addPassthroughCopy("src/style.css");
+  // Example: eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
-  // Add the tagList collection
-  eleventyConfig.addCollection("tagList", function (collectionApi) {
-    let tagSet = new Set();
-
-    collectionApi.getAllSorted().forEach(item => {
+  // Tag list collection
+  eleventyConfig.addCollection("tagList", (collectionApi) => {
+    const tagSet = new Set();
+    collectionApi.getAllSorted().forEach((item) => {
       if ("tags" in item.data) {
-        let tags = item.data.tags.filter(
-          tag => !["all", "nav", "post"].includes(tag) // filter unwanted
-        );
-        tags.forEach(tag => tagSet.add(tag.toLowerCase())); // lowercase
+        const tags = item.data.tags.filter(t => !["all","nav","post"].includes(t));
+        tags.forEach(t => tagSet.add(String(t).toLowerCase()));
       }
     });
-
     return [...tagSet];
   });
 
-
-  // ✅ Custom date formatting filter (fully fixed!)
+  // Date formatting (display)
   eleventyConfig.addFilter("formatDate", (value, format = "MMMM d, yyyy") => {
     let dt;
-
     if (typeof value === "string") {
       dt = DateTime.fromISO(value, { zone: "America/Chicago" });
     } else if (value instanceof Date) {
@@ -42,69 +34,53 @@ module.exports = function(eleventyConfig) {
     } else {
       return "⚠️ Invalid date";
     }
-
     return dt.isValid ? dt.toFormat(format) : "⚠️ Invalid date";
   });
 
-  eleventyConfig.addGlobalData("version", version); // ← expose it to templates
+  // Cache-busting
+  const version = String(Date.now());
+  eleventyConfig.addGlobalData("version", version);
+  eleventyConfig.addFilter("versioned", (url) => `${url}?v=${version}`);
 
-  // ✅ Group posts by year-month for collapsible sections
+  // Group by month (uses Eleventy’s final page.date)
   eleventyConfig.addFilter("groupByMonth", (collection) => {
     const groups = {};
     collection.forEach((item) => {
-      const date = DateTime.fromJSDate(item.date);
-      const key = date.toFormat("yyyy-MM");
-      if (!groups[key]) groups[key] = [];
-      groups[key].push(item);
+      const d = DateTime.fromJSDate(item.date, { zone: "America/Chicago" });
+      const key = d.toFormat("yyyy-LL");
+      (groups[key] ||= []).push(item);
     });
-    return Object.entries(groups).sort((a, b) => (a[0] < b[0] ? 1 : -1)); // Newest first
+    return Object.entries(groups).sort((a, b) => (a[0] < b[0] ? 1 : -1));
   });
 
-  // ✅ Auto-calculate date and permalink from filename if not in frontmatter
+  // Optional: compute permalinks for journal files based on filename date
   eleventyConfig.addGlobalData("eleventyComputed", {
-    date: (data) => {
-      if (data.date) return data.date;
-      const match = data.page.inputPath.match(/(\d{4}-\d{2}-\d{2})/);
-      if (match) {
-        return DateTime.fromISO(match[1], { zone: "America/Chicago" }).toJSDate();
-      }
-      return new Date(); // fallback
-    },
-
     permalink: (data) => {
-      const inputPath = data.page.inputPath;
-
-      // Let Eleventy handle anything NOT inside /journal/
-      if (!inputPath || !inputPath.includes("/journal/")) {
-        return data.permalink ?? false;
+      const inputPath = (data.page.inputPath || "").replaceAll("\\", "/");
+      if (!inputPath.includes("/src/journal/")) {
+        return data.permalink ?? false; // leave non-journal alone
       }
-
       const match = inputPath.match(/(\d{4}-\d{2}-\d{2})/);
-      if (match) {
-        return `journal/${match[1].replace(/-/g, "/")}/index.html`;
-      }
-
+      if (match) return `journal/${match[1].replace(/-/g, "/")}/index.html`;
       return `journal/invalid/${data.page.fileSlug}/index.html`;
-    }
+    },
+    // IMPORTANT: do NOT define `date` here—handled by src/*.11tydata.js files
   });
 
-  // ✅ Journal collection
-  eleventyConfig.addCollection("journal", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("./journal/*.md");
+  // Journal collection (now points at src)
+  eleventyConfig.addCollection("journal", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/journal/*.md");
+    // or: return collectionApi.getFilteredByGlob("src/journal/**/*.md");
   });
 
-  eleventyConfig.addFilter("versioned", (url) => {
-    return `${url}?v=${version}`;
-  });
-
-  // ✅ Eleventy config options
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     dir: {
-      input: ".",
+      input: "src",
       includes: "_includes",
+      data: "_data",
       output: "_site",
     },
   };
