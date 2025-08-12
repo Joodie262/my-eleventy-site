@@ -7,15 +7,26 @@ eleventyNavigation:
   order: 1
 ---
 
-<div class="h-feed">
-  <h1 class="p-name">Journal Archive</h1>
-  <p>Analog journal pages gone digital.</p><br />
-{% for post in collections.journal | reverse %}
-  <li>
-    <a href="{{ post.url }}">
-      {{ post.data.title or (post.date | formatDate("MMMM d, yyyy")) }}
-    </a>
-  </li>
-{% endfor %}
+# Hello!
+## Welcome to my smol website...
+Created with the principles of [IndieWeb](https://indieweb.org/principles)
 
-</div>
+**A little intro**
+
+I'm into cozy, creative things:
+* 🗓 Hobonichi & journaling
+* 🖋 Fountain pens & stationery
+* 🎨 Crafts, zines, handmade stuff
+* 🌱 Slow living, soft aesthetics
+* 🧠 Neurodivergent (hi fellow AuDHDers!)
+
+### I sell stationery
+
+* Shop my official site [J Winsor Art Shop](https://jwinsorart.com)
+* If you prefer to shop on Etsy or are located in the UK [Shop my Etsy Store](https://jwinsorart.etsy.com/)
+* I sell planner sticker sheets, vinyl stickers, notepads, patches, washi tape, post it notes, apparel, printables, and art.
+
+### Current Mood
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=jwinsorart" defer></script>
+
+

@@ -31,6 +31,7 @@ nav, .nav {
   top: 0;
   z-index: 1000;
   background-color: #e8d5f9;
+  border-bottom: 1px dashed #9c67c2;
   padding: 0.5rem 0;
 }
 
@@ -208,11 +209,15 @@ header h1 {
   margin-top: 0; /* kill that giant top gap */
 }
 
+p.subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 div.e-content {
   margin-top: 0.6em;
   padding-top: 0em;
   padding-bottom: 0em;
-  border-top: 1px dashed #9c67c2;
 }
 
 .h-feed h1.p-name {
@@ -330,7 +335,7 @@ aside, .box, .notice {
 
 /* === Footer === */
 footer {
-  margin-top: 4rem;
+  margin-top: 1rem;
   border-top: 1px dashed #9c67c2;
   padding-top: 1rem;
   color: #673a83;
