@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css?v=1755023313252">
+</head>
+<body>
+  <div class="site-container">
+    <header>
+      <h1><a href="/">Judy Winsor</a></h1>
+      <p class="subtitle">Personal website of Judy Winsor</p>
+    </header>
+
+    <!-- New Nav --> 
+    <div class="nav">
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu">
+    ☰ Menu
+  </button>
+
+  <div id="site-menu" class="nav-links">
+    
+
+    
+      
+        <a href="/">
+          Home
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <details class="nav-item">
+          <summary>
+            <!-- Toggle button for submenu -->
+            <button class="nav-toggle-child" aria-label="Toggle submenu" onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
+            <!-- Parent page link -->
+            <a href="http://journal.judywinsor.com/about/"
+               class="nav-parent-link"
+               >
+              About
+            </a>
+          </summary>
+          <ul class="dropdown"><li>
+                <a href="http://journal.judywinsor.com/links">
+                  Links
+                </a>
+              </li><li>
+                <a href="http://journal.judywinsor.com/now">
+                  Now
+                </a>
+              </li><li>
+                <a href="http://journal.judywinsor.com/uses">
+                  Uses
+                </a>
+              </li></ul>
+        </details>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="http://read.judywinsor.com/prompts">
+          Prompts
+        </a>
+      
+    <span class="nav-sep">|</span>
+      
+        <details class="nav-item">
+          <summary>
+            <!-- Toggle button for submenu -->
+            <button class="nav-toggle-child" aria-label="Toggle submenu" onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
+            <!-- Parent page link -->
+            <a href="https://journal.judywinsor.com/"
+               class="nav-parent-link"
+               >
+              Journal
+            </a>
+          </summary>
+          <ul class="dropdown"><li>
+                <a href="/tags/">
+                  Tags
+                </a>
+              </li></ul>
+        </details>
+      
+    <span class="nav-sep">|</span>
+      
+        <a href="https://jwinsorart.com/">
+          Shop
+        </a>
+      
+    </div>
+</div>
+<hr>
+
+
+    <main>
+  <article class="h-entry">
+<h1 class="p-name">Links</h1>
+<p class="published">
+    <time class="dt-published"
+      datetime="2025-08-12T13:44-05:00">
+  Last Updated: August 12, 2025
+</time>
+  </p>
+<div class="e-content">
+          <h2>Support Me</h2>
+<ul>
+<li><a href="https://ko-fi.com/jwinsorart" rel="me">Ko-fi</a></li>
+<li><a href="https://www.patreon.com/jwinsorart" rel="me">Patreon</a></li>
+</ul>
+<h2>Shops</h2>
+<ul>
+<li><a href="https://jwinsorart.etsy.com" rel="me">Etsy</a></li>
+<li><a href="https://jwinsorart.com" rel="me">Shopify</a></li>
+</ul>
+<h2>Social Media</h2>
+<ul>
+<li><a href="https://www.instagram.com/jwinsorart" rel="me">Instagram</a></li>
+<li><a href="https://www.facebook.com/jwinsorart" rel="me">Facebook</a></li>
+<li><a href="https://www.tiktok.com/@jwinsorart" rel="me">TikTok</a></li>
+<li><a href="https://twitter.com/jwinsorart" rel="me">Twitter</a></li>
+<li><a href="https://www.threads.net/@jwinsorart" rel="me">Threads</a></li>
+<li><a href="https://mastodon.social/@jwinsorart" rel="me">Mastodon</a></li>
+<li><a href="https://kind.social/@hyperawarebear" rel="me">Kind.Social Personal Account</a></li>
+<li><a href="https://www.tumblr.com/jwinsorart" rel="me">Tumblr</a></li>
+<li><a href="https://www.pinterest.com/jwinsorart/" rel="me">Pinterest</a></li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li><a href="https://youtube.com/channel/UC53uujLCH7N8DrCk0BG3TDg" rel="me">YouTube</a></li>
+</ul>
+
+          </div>
+  </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 <a href="https://read.judywinsor.com/about" rel="me">Judy Winsor</a></p>
+      <p>Created with <a href="https://www.11ty.dev/">11ty</a> | <a href="#top">Back to Top</a></p>
+        <p class="p-author h-card" style="display:none;">
+  <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
+</p>
+    </footer>
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteMenu = document.getElementById("site-menu");
+
+  navToggle.addEventListener("click", function () {
+    siteMenu.classList.toggle("show");
+
+    // Update aria-expanded for accessibility
+    const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
+    navToggle.setAttribute("aria-expanded", !expanded);
+  });
+});
+</script>
+</body>
+</html>
