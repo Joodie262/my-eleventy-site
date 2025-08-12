@@ -315,6 +315,19 @@ aside, .box, .notice {
   color: #2d0034;
 }
 
+/* === StatusCafe formats === */
+#statuscafe {
+    padding: .5em;
+    background-color: #e8d5f9;
+    border: 1px solid #2d0034;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
 /* === Footer === */
 footer {
   margin-top: 4rem;
