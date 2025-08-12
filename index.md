@@ -13,7 +13,7 @@ eleventyNavigation:
 {% for post in collections.journal | reverse %}
   <li>
     <a href="{{ post.url }}">
-      {{ post.date | formatDate("MMMM d, yyyy") }}
+      {{ post.data.title or (post.date | formatDate("MMMM d, yyyy")) }}
     </a>
   </li>
 {% endfor %}
