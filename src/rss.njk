@@ -1,0 +1,46 @@
+---
+permalink: "/feed.xml"
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+{% set siteUrl = site.url or "https://journal.judywinsor.com" %}
+{% set posts = collections.journal | default(collections.all) | reverse | head(20) %}
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.title | default("Judy Winsor — Journal") }}</title>
+    <link>{{ site.url | default("https://journal.judywinsor.com") }}</link>
+    <description>{{ site.description | default("Analog journal pages gone digital.") }}</description>
+    <language>en-US</language>
+    <generator>Eleventy</generator>
+    <ttl>60</ttl>
+    <atom:link href="{{ page.url | absoluteUrl(site.url) }}"
+               rel="self" type="application/rss+xml" />
+
+    <lastBuildDate>{{ collections.all | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+
+    {% for post in collections.journal | reverse | head(10) %}
+    <item>
+      <title>{{ post.data.title | xmlEscape }}</title>
+      <link>{{ post.url | absoluteUrl(site.url) }}</link>
+      <author>Judy Winsor</author>
+      <guid isPermaLink="true">{{ post.url | absoluteUrl(site.url) }}</guid>
+      <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+      {% if post.data.tags %}
+        {% for t in post.data.tags %}
+          <category>{{ t }}</category>
+        {% endfor %}
+      {% endif %}
+      <description><![CDATA[
+        {{ post.templateContent | safe }}
+      ]]></description>
+      {# Optional: full content, for readers that support it #}
+      <content:encoded><![CDATA[
+        {{ post.templateContent | safe }}
+      ]]></content:encoded>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

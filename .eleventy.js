@@ -69,9 +69,27 @@ module.exports = function(eleventyConfig) {
     // IMPORTANT: do NOT define `date` here—handled by src/*.11tydata.js files
   });
 
+// Take the first N items of an array (Eleventy docs pattern)
+eleventyConfig.addFilter("head", (array, n) => {
+  if (!Array.isArray(array)) return array;
+  if (n < 0) return array.slice(n); // support negative like head(-1)
+  return array.slice(0, n);
+});
+
+// Escape text for XML (titles, etc.)
+eleventyConfig.addFilter("xmlEscape", (value) => {
+  if (value === null || value === undefined) return "";
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+});
+
   // Journal collection (now points at src)
   eleventyConfig.addCollection("journal", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/journal/*.md");
+    return collectionApi.getFilteredByGlob("src/journal/**/*.md");
     // or: return collectionApi.getFilteredByGlob("src/journal/**/*.md");
   });
 
@@ -83,6 +101,7 @@ module.exports = function(eleventyConfig) {
       input: "src",
       includes: "_includes",
       output: "_site",
+      data: "",
     },
   };
 };
