@@ -10,8 +10,8 @@ layout: page-layout.njk
 I'm a creator of cozy things, thoughtful stickers, and intentional online spaces.
 
 ### More:
-- *[NOW](https://read.judywinsor.com/about/now)* – What's happening right now in my life  
-- *[USES](https://read.judywinsor.com/about/uses)* – What tools and tech I use
+- *[NOW](https://journal.judywinsor.com/now)* – What's happening right now in my life  
+- *[USES](https://journal.judywinsor.com/uses)* – What tools and tech I use
 
 ### Social:
 - [Mastodon](https://mastodon.social/@jwinsorart)
