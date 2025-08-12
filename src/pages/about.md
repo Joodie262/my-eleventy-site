@@ -2,6 +2,7 @@
 title: About
 permalink: /about/
 layout: page-layout.njk
+date: 2025-06-12
 ---
 <img src="http://read.judywinsor.com/user/images/judy.webp" alt="Photo of Judy Winsor" style="max-width: 300px;" />
 

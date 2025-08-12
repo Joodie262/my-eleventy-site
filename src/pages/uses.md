@@ -4,6 +4,7 @@ menu: Uses
 subtitle: 'What I Use'
 permalink: /uses/
 layout: page-layout.njk
+date: 2025-08-12
 ---
 A list of all the tools and tech I use regularly.
 

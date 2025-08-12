@@ -4,6 +4,7 @@ menu: Links
 subtitle: 'Links'
 permalink: /links/
 layout: page-layout.njk
+date: 2025-08-12
 ---
 ## Support Me
 - <a href="https://ko-fi.com/jwinsorart" rel="me">Ko-fi</a>  

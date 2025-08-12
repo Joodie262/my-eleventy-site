@@ -4,6 +4,7 @@ menu: Now
 subtitle: 'What’s happening right now in my life'
 permalink: /now/
 layout: page-layout.njk
+date: 2025-08-12
 ---
 <h3>Current Mood</h3>
 <div id="statuscafe">
