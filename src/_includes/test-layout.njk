@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
+  {% include "partials/meta-info.html" %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
+</head>
+<body>
+  <div class="site-container">
+    <header>
+      <h1><a href="/">Judy Winsor</a></h1>
+      <p class="subtitle">Personal website of Judy Winsor</p>
+    </header>
+
+    <!-- New Nav --> 
+    {% include "partials/nav-list.njk" %}
+
+    <main>
+  <article class="h-entry">
+<h1 class="p-name">{{ title }}</h1>
+{% if subtitle %}
+  <h3 class="subtitle">{{ subtitle }}</h3>
+{% endif %}
+{% if date %}
+<p class="published">
+  <time class="dt-published"
+        datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
+    Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
+  </time>
+</p>
+{% endif %}
+<div class="e-content">
+          {{ content | safe }}
+          </div>
+  </article>
+    </main>
+
+<!-- Footer --> 
+{% include "partials/footer.njk" %}
+  </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteMenu = document.getElementById("site-menu");
+
+  navToggle.addEventListener("click", function () {
+    siteMenu.classList.toggle("show");
+
+    // Update aria-expanded for accessibility
+    const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
+    navToggle.setAttribute("aria-expanded", !expanded);
+  });
+});
+</script>
+</body>
+</html>

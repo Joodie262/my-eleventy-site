@@ -1,10 +1,12 @@
 // .eleventy.js
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 module.exports = function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(rssPlugin);
 
   // Passthroughs (update to match where your assets actually live)
   eleventyConfig.addPassthroughCopy("src/style.css");
