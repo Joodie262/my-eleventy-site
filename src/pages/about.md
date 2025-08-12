@@ -1,6 +1,7 @@
 ---
 title: About
 permalink: /about/
+subtitle: 'Learn more about Judy'
 layout: page-layout.njk
 date: 2025-06-12
 ---
