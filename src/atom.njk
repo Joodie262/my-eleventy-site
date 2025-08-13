@@ -4,8 +4,8 @@ eleventyExcludeFromCollections: true
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-{% set siteUrl = site.url or "https://journal.judywinsor.com" %}
-{% set posts = (collections.journal or collections.all) | reverse | head(20) %}
+{%- set siteUrl = site.url or "https://journal.judywinsor.com" -%}
+{%- set posts = (collections.journal or collections.all) | reverse | head(20) -%}
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <title>{{ site.title | default("Judy Winsor — Journal") }}</title>
   <id>{{ siteUrl }}</id>
@@ -34,7 +34,7 @@ layout: null
     <!-- tags -->
     {% if post.data.tags %}
       {% for t in post.data.tags %}
-        <category term="{{ t }}" />
+        <category term="{{ t | xmlEscape }}" />
       {% endfor %}
     {% endif %}
 
