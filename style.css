@@ -31,6 +31,7 @@ nav, .nav {
   top: 0;
   z-index: 1000;
   background-color: #e8d5f9;
+  border-bottom: 1px dashed #9c67c2;
   padding: 0.5rem 0;
 }
 
@@ -44,6 +45,51 @@ a:hover {
   color: #ffffff;
   background-color: #a14cd9;
   padding: 0 2px;
+}
+
+/* Make each parent-item inline */
+.nav-links .nav-item {
+  display: inline-block;
+  position: relative;
+  max-width: 640px;
+  margin-right: 0.5em;
+}
+
+/* Hide the triangle on summary (optional) */
+.nav-links .nav-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Style the dropdown menu */
+.nav-links .nav-item .dropdown {
+  display: none !important;
+  z-index: 9999;
+  position: absolute;
+  max-width: 640px;
+  top: 100%;
+  left: 0;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  background: #e8d5f9;      /* adjust to match your background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  list-style: none;
+}
+
+/* When open, show the dropdown */
+.nav-links .nav-item[open] .dropdown {
+  display: block !important;
+}
+
+/* Dropdown items stacked */
+.nav-links .nav-item .dropdown li {
+  margin: 0;
+}
+
+/* Separator spacing */
+.nav-sep {
+  margin: 0 0.5em;
 }
 
 /* === Collapsible Mobile Menu Button === */
@@ -67,13 +113,21 @@ a:hover {
 
 /* === Menu Wrapper === */
 #site-menu {
-  display: flex; /* Desktop default */
-  gap: 0.5rem;
+  display: flex;              /* always visible on desktop */
+  box-sizing: border-box;     /* include padding & border in width */
+  width: 100%;                /* fill its container */
+  max-width: 640px;           /* but never exceed 640px total */
+  margin: 0 auto;             /* center it */
+  flex-direction: row;        /* horizontal menu */
+  gap: 0.5rem;                /* spacing between links */
+  padding: 0.5rem;
 }
 
 #site-menu a {
   color: #a14cd9;
   text-decoration: underline dotted;
+  flex-shrink: 1;       /* allow links to squeeze */
+  min-width: 0; 
 }
 
 #site-menu a:hover {
@@ -90,14 +144,12 @@ a:hover {
   }
 
   #site-menu {
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    background-color: #f6e8ff;
-    border: 1px solid #9c67c2;
-    padding: 0.5rem;
+    flex-direction: row;
+    display: none;
   }
 
-  #site-menu.show {
+  #site-menu.show { 
+    flex-direction: column;
     display: flex;
   }
 
@@ -114,16 +166,58 @@ a:hover {
     display: none;
   }
 }
+/* === SUMMARY LAYOUT === */
+.nav-links .nav-item summary {
+  display: inline-flex;       /* put arrow + link in one row */
+  align-items: center;        /* vertical center */                /* space between arrow and link */
+}
+
+/* Remove the native triangle marker */
+.nav-links .nav-item summary::-webkit-details-marker {
+  display: none;
+}
+.nav-links .nav-item summary::marker {
+  display: none;
+}
+
+/* === ARROW STYLING === */
+/* Make the arrow a right-pointing chevron, inherit the nav bg, and remove default button styling */
+.nav-toggle-child {
+  background-color: inherit;    /* matches the nav background */
+  border: none;
+  color: black;
+  padding: 0;
+  margin-right: 0.35em;                    /* we’re spacing via the summary gap */
+  font-size: 1.1em;
+  line-height: 1;               /* prevent extra height */
+  cursor: pointer;
+}
+
+/* Replace the ▾ character with a right-pointing arrow via a pseudo-element */
+.nav-toggle-child::before {
+  content: "▸";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+/* Rotate it downwards when the menu is open */
+.nav-item[open] summary > .nav-toggle-child::before {
+  transform: rotate(90deg);
+}
 
 header h1 {
   margin-top: 0; /* kill that giant top gap */
+}
+
+p.subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 div.e-content {
   margin-top: 0.6em;
   padding-top: 0em;
   padding-bottom: 0em;
-  border-top: 1px dashed #9c67c2;
 }
 
 .h-feed h1.p-name {
@@ -226,9 +320,22 @@ aside, .box, .notice {
   color: #2d0034;
 }
 
+/* === StatusCafe formats === */
+#statuscafe {
+    padding: .5em;
+    background-color: #e8d5f9;
+    border: 1px solid #2d0034;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
 /* === Footer === */
 footer {
-  margin-top: 4rem;
+  margin-top: 1rem;
   border-top: 1px dashed #9c67c2;
   padding-top: 1rem;
   color: #673a83;
