@@ -1,7 +1,9 @@
 {
   "title": "Judy Winsor — Journal",
   "description": "Analog journal pages gone digital.",
+  "subtitle": "Cozy analog pages, lovingly digitized.",
   "url": "https://journal.judywinsor.com",
   "authorName": "Judy Winsor",
-  "authorEmail": "judy@judywinsor.com"
+  "authorEmail": "judy@judywinsor.com",
+  "authorUrl": "https://journal.judywinsor.com/about"
 }
