@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(rssPlugin);
 
+  eleventyConfig.addPassthroughCopy("images");
+
   // Passthroughs (update to match where your assets actually live)
   eleventyConfig.addPassthroughCopy("src/style.css");
   // Example: eleventyConfig.addPassthroughCopy({ "src/images": "images" });
