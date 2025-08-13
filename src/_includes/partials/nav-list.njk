@@ -10,17 +10,17 @@
       {% if item.children.length %}
         <details class="nav-item"{% if item.isActive %} open{% endif %}>
           <summary>
-            <!-- Toggle button for submenu -->
-            <button class="nav-toggle-child" aria-label="Toggle submenu" onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
-            <!-- Parent page link -->
+            <button class="nav-toggle-child" aria-label="Toggle submenu"
+              onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
             <a href="{{ item.url }}"
                class="nav-parent-link"
                {% if item.isCurrent %}aria-current="page"{% endif %}>
               {{ item.title }}
             </a>
           </summary>
+          {% set kids = item.children %}
           <ul class="dropdown">
-            {%- for child in item.children -%}
+            {%- for child in kids -%}
               <li>
                 <a href="{{ child.url }}"{% if child.isCurrent %} aria-current="page"{% endif %}>
                   {{ child.title }}
@@ -36,11 +36,18 @@
       {% endif %}
     {% endmacro %}
 
-    {%- for entry in navPages -%}
-      {{ renderNavItem(entry) }}
-      {%- if not loop.last -%}
-        <span class="nav-sep">|</span>
-      {%- endif -%}
-    {%- endfor -%}
+    {# --- Only add a separator before items after the first actually-rendered one --- #}
+    {% set printedCount = 0 %}
+    {% for entry in navPages %}
+      {# guard in case an entry ends up intentionally skipped later #}
+      {% set willRender = entry.title and (entry.url or entry.children.length) %}
+      {% if willRender %}
+        {% if printedCount > 0 %}
+          <span class="nav-sep">|</span>
+        {% endif %}
+        {{ renderNavItem(entry) }}
+        {% set printedCount = printedCount + 1 %}
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
