@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="purple">
 <head>
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navToggle.setAttribute("aria-expanded", !expanded);
   });
 });
+</script>
+<script>
+  document.getElementById('theme-toggle').onclick = function() {
+    document.body.dataset.theme =
+      document.body.dataset.theme === 'theme-teal' ? '' : 'theme-teal';
+  };
 </script>
 </body>
 </html>
