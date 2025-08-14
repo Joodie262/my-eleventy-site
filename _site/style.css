@@ -57,17 +57,6 @@ a:hover {
   vertical-align: 0.5em;
 }
 
-/*
-.meta-svg svg {
-  width: 12px;
-  height: 12px;
-}
-*/
-
-.meta-svg svg {
-  /* inherits color via currentColor (stroke) */
-}
-
 .text-muted .meta-svg svg {
   opacity: .7;
 }

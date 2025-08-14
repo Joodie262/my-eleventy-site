@@ -27,12 +27,12 @@
   <h3 class="subtitle">{{ subtitle }}</h3>
 {% endif %}
 {% if date %}
-<p class="published">
+<small><p class="published">
   <time class="dt-published"
         datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
     Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
   </time>
-</p>
+</p></small>
 {% endif %}
 <div class="e-content">
           {{ content | safe }}

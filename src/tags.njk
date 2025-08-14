@@ -11,8 +11,8 @@ eleventyNavigation:
 <h1>All Tags</h1>
 
 {% for tag in collections.tagList | sort %}
-  <h2 id="{{ tag | slug }}">{{ tag }}</h2>
-  <ul>
+  <h3 id="{{ tag | slug }}">{{ tag }}</h3>
+  <ul style="list-style:none; padding:1; margin:0.5;">
     {% for post in collections[tag] %}
       <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
     {% endfor %}
