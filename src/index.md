@@ -20,7 +20,7 @@ I'm into cozy, creative things:
 * 🌱 Slow living, soft aesthetics
 * 🧠 Neurodivergent (hi fellow AuDHDers!)
 
-### I sell stationery
+### <!-- Decorative (ignored by screen readers) -->{% icon "shopping-bag", { class: "meta-svg", width: 24, height: 24, strokeWidth: 2 } %} I sell stationery
 
 * Shop my official site [J Winsor Art Shop](https://jwinsorart.com)
 * If you prefer to shop on Etsy or are located in the UK [Shop my Etsy Store](https://jwinsorart.etsy.com/)

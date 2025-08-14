@@ -1,7 +1,9 @@
 /* === Base Styles === */
 body {
-  background-color: #e8d5f9; /* light lavender base */
-  color: #2d0034; /* dark plum text */
+  background-color: #e8d5f9;
+  /* light lavender base */
+  color: #2d0034;
+  /* dark plum text */
   font-family: Consolas, 'Lucida Console', Monaco, monospace;
   font-size: 18px;
   line-height: 1.6;
@@ -15,7 +17,8 @@ main,
   margin: 0 auto;
 }
 
-.main, .item {
+.main,
+.item {
   padding: 0;
 }
 
@@ -26,7 +29,8 @@ main,
 }
 
 /* === Sticky Nav === */
-nav, .nav {
+nav,
+.nav {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -45,6 +49,25 @@ a:hover {
   color: #ffffff;
   background-color: #a14cd9;
   padding: 0 2px;
+}
+
+.meta-svg {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: -0.125em;
+}
+
+.meta-svg svg {
+  width: 12px;
+  height: 12px;
+}
+
+.meta-svg svg {
+  /* inherits color via currentColor (stroke) */
+}
+
+.text-muted .meta-svg svg {
+  opacity: .7;
 }
 
 /* Make each parent-item inline */
@@ -72,8 +95,9 @@ a:hover {
   left: 0;
   margin: 0.5em 0;
   padding: 0.5em;
-  background: #e8d5f9;      /* adjust to match your background */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #e8d5f9;
+  /* adjust to match your background */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   list-style: none;
 }
 
@@ -94,9 +118,11 @@ a:hover {
 
 /* === Collapsible Mobile Menu Button === */
 .nav-toggle {
-  display: none; /* Hidden on desktop */
+  display: none;
+  /* Hidden on desktop */
   width: 100%;
-  background: #a14cd9; /* bright orchid */
+  background: #a14cd9;
+  /* bright orchid */
   color: #ffffff;
   border: 2px dashed #9c67c2;
   padding: 0.5rem 1rem;
@@ -113,21 +139,29 @@ a:hover {
 
 /* === Menu Wrapper === */
 #site-menu {
-  display: flex;              /* always visible on desktop */
-  box-sizing: border-box;     /* include padding & border in width */
-  width: 100%;                /* fill its container */
-  max-width: 640px;           /* but never exceed 640px total */
-  margin: 0 auto;             /* center it */
-  flex-direction: row;        /* horizontal menu */
-  gap: 0.5rem;                /* spacing between links */
+  display: flex;
+  /* always visible on desktop */
+  box-sizing: border-box;
+  /* include padding & border in width */
+  width: 100%;
+  /* fill its container */
+  max-width: 640px;
+  /* but never exceed 640px total */
+  margin: 0 auto;
+  /* center it */
+  flex-direction: row;
+  /* horizontal menu */
+  gap: 0.5rem;
+  /* spacing between links */
   padding: 0.5rem;
 }
 
 #site-menu a {
   color: #a14cd9;
   text-decoration: underline dotted;
-  flex-shrink: 1;       /* allow links to squeeze */
-  min-width: 0; 
+  flex-shrink: 1;
+  /* allow links to squeeze */
+  min-width: 0;
 }
 
 #site-menu a:hover {
@@ -148,7 +182,7 @@ a:hover {
     display: none;
   }
 
-  #site-menu.show { 
+  #site-menu.show {
     flex-direction: column;
     display: flex;
   }
@@ -166,16 +200,21 @@ a:hover {
     display: none;
   }
 }
+
 /* === SUMMARY LAYOUT === */
 .nav-links .nav-item summary {
-  display: inline-flex;       /* put arrow + link in one row */
-  align-items: center;        /* vertical center */                /* space between arrow and link */
+  display: inline-flex;
+  /* put arrow + link in one row */
+  align-items: center;
+  /* vertical center */
+  /* space between arrow and link */
 }
 
 /* Remove the native triangle marker */
 .nav-links .nav-item summary::-webkit-details-marker {
   display: none;
 }
+
 .nav-links .nav-item summary::marker {
   display: none;
 }
@@ -183,13 +222,16 @@ a:hover {
 /* === ARROW STYLING === */
 /* Make the arrow a right-pointing chevron, inherit the nav bg, and remove default button styling */
 .nav-toggle-child {
-  background-color: inherit;    /* matches the nav background */
+  background-color: inherit;
+  /* matches the nav background */
   border: none;
   color: black;
   padding: 0;
-  margin-right: 0.35em;                    /* we’re spacing via the summary gap */
+  margin-right: 0.35em;
+  /* we’re spacing via the summary gap */
   font-size: 1.1em;
-  line-height: 1;               /* prevent extra height */
+  line-height: 1;
+  /* prevent extra height */
   cursor: pointer;
 }
 
@@ -201,12 +243,13 @@ a:hover {
 }
 
 /* Rotate it downwards when the menu is open */
-.nav-item[open] summary > .nav-toggle-child::before {
+.nav-item[open] summary>.nav-toggle-child::before {
   transform: rotate(90deg);
 }
 
 header h1 {
-  margin-top: 0; /* kill that giant top gap */
+  margin-top: 0;
+  /* kill that giant top gap */
 }
 
 p.subtitle {
@@ -225,12 +268,16 @@ div.e-content {
 }
 
 article.h-entry h1.p-name {
-  font-size:x-large;
+  font-size: x-large;
   color: #50176e;
 }
 
 /* === Typography === */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: Consolas, 'Lucida Console', Monaco, monospace;
   color: #7d2da8;
   border-bottom: 1px dashed #9c67c2;
@@ -239,15 +286,51 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.1em;
 }
 
-.h1 { font-size: 40px; font-weight: bold; line-height: 1.2; margin: 0.3em 0; }
-.h2 { font-size: 32px; font-weight: bold; line-height: 1.3; margin: 0.3em 0; }
-.h3 { font-size: 28px; font-weight: bold; line-height: 1.3; margin: 0.3em 0; }
-.h4 { font-size: 24px; font-weight: bold; line-height: 1.4; margin: 0.3em 0; }
-.h5 { font-size: 20px; font-weight: bold; line-height: 1.4; margin: 0.3em 0; }
-.h6 { font-size: 16px; font-weight: bold; line-height: 1.5; margin: 0.3em 0; }
+.h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.3em 0;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0.3em 0;
+}
+
+.h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0.3em 0;
+}
+
+.h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0.3em 0;
+}
+
+.h5 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0.3em 0;
+}
+
+.h6 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0.3em 0;
+}
 
 /* === Lists === */
-ul, ol {
+ul,
+ol {
   padding-left: 2em;
 }
 
@@ -264,15 +347,17 @@ strong {
   font-family: 'JetBrains Mono', monospace;
   background: rgba(255, 255, 255, 0.2);
   font-style: bold;
-  padding: 0 0.2em; /* keeps it from touching letters */
-  border-radius: 2px; /* optional: soft edges */
+  padding: 0 0.2em;
+  /* keeps it from touching letters */
+  border-radius: 2px;
+  /* optional: soft edges */
 }
 
 .datetime,
 small,
 .p-author,
 .dt-published {
-color: color-mix(in srgb, #2d0034 70%, transparent);
+  color: color-mix(in srgb, #2d0034 70%, transparent);
 }
 
 p.p-author,
@@ -312,7 +397,9 @@ pre {
 }
 
 /* === Boxed Sections === */
-aside, .box, .notice {
+aside,
+.box,
+.notice {
   background-color: #f6e8ff;
   border: 1px solid #9c67c2;
   padding: 1rem;
@@ -322,15 +409,17 @@ aside, .box, .notice {
 
 /* === StatusCafe formats === */
 #statuscafe {
-    padding: .5em;
-    background-color: #e8d5f9;
-    border: 1px solid #2d0034;
+  padding: .5em;
+  background-color: #e8d5f9;
+  border: 1px solid #2d0034;
 }
+
 #statuscafe-username {
-    margin-bottom: .5em;
+  margin-bottom: .5em;
 }
+
 #statuscafe-content {
-    margin: 0 1em 0.5em 1em;
+  margin: 0 1em 0.5em 1em;
 }
 
 /* === Footer === */

@@ -1,32 +1,129 @@
 // .eleventy.js
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const rssPlugin = require("@11ty/eleventy-plugin-rss");
+const fs = require("fs");
+const path = require("path");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
+  // ---------------------------
   // Plugins
+  // ---------------------------
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(rssPlugin);
 
+  // ---------------------------
+  // Passthrough Copy
+  // ---------------------------
   eleventyConfig.addPassthroughCopy("src/images");
-
-  // Passthroughs (update to match where your assets actually live)
   eleventyConfig.addPassthroughCopy("src/style.css");
   // Example: eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
-  // Tag list collection
+  // ---------------------------
+  // Inline SVG icon shortcode
+  // ---------------------------
+  const ICON_CACHE = new Map();
+  const ICON_DIR = path.join(__dirname, "src", "_icons");
+
+  function renderIcon(name, opts = {}) {
+    const file = path.join(ICON_DIR, `${name}.svg`);
+    if (!ICON_CACHE.has(file)) {
+      if (!fs.existsSync(file)) throw new Error(`Icon not found: ${file}`);
+      ICON_CACHE.set(file, fs.readFileSync(file, "utf8"));
+    }
+    let svg = ICON_CACHE.get(file);
+
+    const {
+      width = 16,
+      height = 16,
+      class: className,
+      title,                 // optional: label for screen readers
+      decorative = !title,   // default: decorative if no title
+      strokeWidth = 1        // default stroke thickness
+    } = opts;
+
+    // Ensure the file has a viewBox (required for proper scaling)
+    if (!/viewBox="/i.test(svg)) {
+      // Try to infer common Tabler default; adjust if your set differs
+      svg = svg.replace(
+        /<svg\b/i,
+        '<svg viewBox="0 0 24 24"'
+      );
+    }
+
+    // Remove per-element stroke-width so our global one wins
+    svg = svg.replace(/stroke-width="[^"]*"/g, "");
+
+    // Rebuild the root <svg ...> attributes
+    svg = svg.replace(/<svg\b([^>]*)>/, (m, attrs) => {
+      let a = attrs.trim();
+
+      const replaceAttr = (str, attr, val) =>
+        str.replace(new RegExp(`\\b${attr}="[^"]*"`, "g"), "").trim() + ` ${attr}="${val}"`;
+
+      // Size — always set (prevents 300x150 default)
+      a = replaceAttr(a, "width", width);
+      a = replaceAttr(a, "height", height);
+
+      // Color model / style defaults
+      a = replaceAttr(a, "stroke", "currentColor");
+      a = replaceAttr(a, "fill", "none");
+      a = replaceAttr(a, "stroke-width", strokeWidth);
+      a = replaceAttr(a, "stroke-linecap", "round");
+      a = replaceAttr(a, "stroke-linejoin", "round");
+
+      // Class merge
+      if (className) {
+        if (/\bclass="/.test(a)) {
+          a = a.replace(/\bclass="([^"]*)"/, (_, c) => `class="${c} ${className}"`);
+        } else {
+          a += ` class="${className}"`;
+        }
+      }
+
+      // A11y
+      if (decorative) {
+        if (!/\baria-hidden=/.test(a)) a += ' aria-hidden="true"';
+        if (!/\brole=/.test(a)) a += ' role="img"';
+      } else {
+        if (!/\brole=/.test(a)) a += ' role="img"';
+      }
+
+      return `<svg ${a.trim()}>`;
+    });
+
+    // Add a title node if provided
+    if (title && !svg.includes("<title")) {
+      svg = svg.replace(/<svg[^>]*>/, (open) => `${open}\n  <title>${title}</title>`);
+    }
+
+    return svg;
+  }
+
+  eleventyConfig.addNunjucksShortcode("icon", renderIcon);
+  eleventyConfig.addLiquidShortcode("icon", renderIcon);
+
+  // ---------------------------
+  // Collections
+  // ---------------------------
   eleventyConfig.addCollection("tagList", (collectionApi) => {
     const tagSet = new Set();
     collectionApi.getAllSorted().forEach((item) => {
       if ("tags" in item.data) {
-        const tags = item.data.tags.filter(t => !["all","nav","post"].includes(t));
-        tags.forEach(t => tagSet.add(String(t).toLowerCase()));
+        const tags = item.data.tags.filter((t) => !["all", "nav", "post"].includes(t));
+        tags.forEach((t) => tagSet.add(String(t).toLowerCase()));
       }
     });
     return [...tagSet];
   });
 
-  // Date formatting (display)
+  eleventyConfig.addCollection("journal", (collectionApi) => {
+    return collectionApi.getFilteredByGlob("src/journal/**/*.md");
+  });
+
+  // ---------------------------
+  // Filters
+  // ---------------------------
   eleventyConfig.addFilter("formatDate", (value, format = "MMMM d, yyyy") => {
     let dt;
     if (typeof value === "string") {
@@ -49,7 +146,7 @@ module.exports = function(eleventyConfig) {
   // Group by month (uses Eleventy’s final page.date)
   eleventyConfig.addFilter("groupByMonth", (collection) => {
     const groups = {};
-    collection.forEach((item) => {
+    (collection || []).forEach((item) => {
       const d = DateTime.fromJSDate(item.date, { zone: "America/Chicago" });
       const key = d.toFormat("yyyy-LL");
       (groups[key] ||= []).push(item);
@@ -57,7 +154,27 @@ module.exports = function(eleventyConfig) {
     return Object.entries(groups).sort((a, b) => (a[0] < b[0] ? 1 : -1));
   });
 
-  // Optional: compute permalinks for journal files based on filename date
+  // Take the first N items of an array (Eleventy docs pattern)
+  eleventyConfig.addFilter("head", (array, n) => {
+    if (!Array.isArray(array)) return array;
+    if (n < 0) return array.slice(n);
+    return array.slice(0, n);
+  });
+
+  // Escape text for XML (titles, etc.)
+  eleventyConfig.addFilter("xmlEscape", (value) => {
+    if (value === null || value === undefined) return "";
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+  });
+
+  // ---------------------------
+  // Computed data
+  // ---------------------------
   eleventyConfig.addGlobalData("eleventyComputed", {
     permalink: (data) => {
       const inputPath = (data.page.inputPath || "").replaceAll("\\", "/");
@@ -71,30 +188,9 @@ module.exports = function(eleventyConfig) {
     // IMPORTANT: do NOT define `date` here—handled by src/*.11tydata.js files
   });
 
-// Take the first N items of an array (Eleventy docs pattern)
-eleventyConfig.addFilter("head", (array, n) => {
-  if (!Array.isArray(array)) return array;
-  if (n < 0) return array.slice(n); // support negative like head(-1)
-  return array.slice(0, n);
-});
-
-// Escape text for XML (titles, etc.)
-eleventyConfig.addFilter("xmlEscape", (value) => {
-  if (value === null || value === undefined) return "";
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-});
-
-  // Journal collection (now points at src)
-  eleventyConfig.addCollection("journal", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/journal/**/*.md");
-    // or: return collectionApi.getFilteredByGlob("src/journal/**/*.md");
-  });
-
+  // ---------------------------
+  // Final return
+  // ---------------------------
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
