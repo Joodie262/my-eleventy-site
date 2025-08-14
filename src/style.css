@@ -54,13 +54,15 @@ a:hover {
 .meta-svg {
   display: inline-block;
   line-height: 0;
-  vertical-align: -0.125em;
+  vertical-align: 0.5em;
 }
 
+/*
 .meta-svg svg {
   width: 12px;
   height: 12px;
 }
+*/
 
 .meta-svg svg {
   /* inherits color via currentColor (stroke) */
@@ -428,6 +430,10 @@ footer {
   border-top: 1px dashed #9c67c2;
   padding-top: 1rem;
   color: #673a83;
+  font-size: 14px;
+}
+
+.postend {
   font-size: 14px;
 }
 

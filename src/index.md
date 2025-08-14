@@ -1,14 +1,13 @@
 ---
-title: Journal Archive
-layout: layout.njk
+title: Personal Website of Judy Winsor
+layout: page-layout.njk
 permalink: index.html
 eleventyNavigation:
   key: "Home"
   order: 1
 ---
 
-# Hello!
-## Welcome to my smol website...
+### Hello! Welcome to my smol website...
 Created with the principles of [IndieWeb](https://indieweb.org/principles)
 
 **A little intro**
@@ -20,7 +19,7 @@ I'm into cozy, creative things:
 * 🌱 Slow living, soft aesthetics
 * 🧠 Neurodivergent (hi fellow AuDHDers!)
 
-### <!-- Decorative (ignored by screen readers) -->{% icon "shopping-bag", { class: "meta-svg", width: 24, height: 24, strokeWidth: 2 } %} I sell stationery
+### <span class="meta-svg" style="display:inline-block; margin-right:0.4rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->{% icon "shopping-bag", { class: "meta-svg", width: 24, height: 24, strokeWidth: 2 } %}</span>I sell stationery
 
 * Shop my official site [J Winsor Art Shop](https://jwinsorart.com)
 * If you prefer to shop on Etsy or are located in the UK [Shop my Etsy Store](https://jwinsorart.etsy.com/)
