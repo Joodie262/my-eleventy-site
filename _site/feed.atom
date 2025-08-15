@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <title>Judy Winsor — Journal</title>
   <id>https://journal.judywinsor.com</id>
-  <updated>2025-08-13T00:00:00Z</updated>
+  <updated>2025-08-14T00:00:00Z</updated>
   <generator>Eleventy</generator>
 
   <!-- self + site links -->
   <link rel="self" href="https://journal.judywinsor.com/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://journal.judywinsor.com" type="text/html" />
 
+  
+  <entry>
+    <title>August 14, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/14/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/14/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-14T00:00:00Z</updated>
+    <published>2025-08-14T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#work_day" />
+      
+        <category term="#inventory_issue" />
+      
+        <category term="#tcmc_delivery" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Work</li>
+<li>[x] Mail order</li>
+<li>[x] TCMC delivery</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>9 hr 11 min — 88% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] Am meds</li>
+<li>[x] Planner fill</li>
+<li>[x] Self care</li>
+<li>[x] Shop orders</li>
+<li>[x] Noon meds</li>
+<li>[x] No spend</li>
+<li>[x] CM + H logs</li>
+<li>[x] Yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>immutable</strong> <em>(adj.)</em></p>
+<ul>
+<li>a formal word used to describe something that is unable to be changed</li>
+</ul>
+<blockquote>
+<p>It is hardly an immutable fact that cats and dogs are sworn enemies; over the years our golden retriever has grown both fond and protective of her tabby housemate.</p>
+</blockquote>
+<h2>Journal</h2>
+<p>Man my sleep has been so inconsistent lately. Very strange. Anyway, today is a work day. Next week I had to reschedule my dentist appt to Thursday because they didn’t have any other days. I also got some sticker sheets cut yesterday. Somehow I oversold by 1 so I had to restock ASAP. I’m always super diligent with my inventory tracking so I don’t know what happened. I’m gonna blame the tools. Not human error. Ha!! Probably, actually my fault somewhere. I wonder if other shop owners under list their inventory by 1–10 or something so they don’t oversell? The idea of keeping multiple versions of my inventory sounds more complicated than I want.</p>
+<h2>Prompt</h2>
+<p><strong>Prompt 14: If you had to eat only foods that start with one letter for the day, what letter would you choose?</strong><br>
+Won’t be a very nutritious day but I’d pick M. I could have a muffin for breakfast, macaroni and cheese for dinner. I don’t know what my snacks/lunch would be tough. Uh… mozzarella string cheese? Oh I could make something mini: like a mini quiche or something. And maybe some milk chocolate or a Mr. Goodbar if I’m craving dessert. IDK this is a HARD question!</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong></li>
+<li>✅ <strong>All habits completed</strong></li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: productive but puzzled about inventory</li>
+<li>🏷️ <strong>Tags</strong>: #work_day #inventory_issue #tcmc_delivery</li>
+</ul>
+
+    ]]></content>
+  </entry>
   
   <entry>
     <title>August 13, 2025</title>
@@ -1433,82 +1506,6 @@ I’ve come to love the beach. Before I started beachcombing and rock hunting I 
 <li>⚠️ <strong>One task incomplete</strong> (Water d. plants)</li>
 <li>✨ <strong>Mood</strong>: balanced and productive</li>
 <li>🏷️ <strong>Tags</strong>: #weekend #crochet #the_sandman</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>July 25, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/07/25/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/07/25/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-07-25T00:00:00Z</updated>
-    <published>2025-07-25T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#lotr" />
-      
-        <category term="#audiobooks" />
-      
-        <category term="#planner" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[ ] water downstairs plants</li>
-<li>[x] bath</li>
-<li>[x] scan sheets</li>
-<li>[x] S.M. post</li>
-<li>[x] stuff envelopes</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 48 min, 83% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[x] sm. post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] CM + H logs</li>
-<li>[x] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>sui generis</strong> <em>(adj.)</em></p>
-<ul>
-<li>Formal adj. used to describe someone or something in a class or group of its own, or, in other words, unlike anyone or anything else.</li>
-</ul>
-<blockquote>
-<p>As a scholar, she is sui generis, head and shoulders above everyone else in her field.<br>
-<em>Finally a word I’ve never even heard of before!</em></p>
-</blockquote>
-<h2>Journal</h2>
-<p>Yesterday was one of the sweatiest ever. The temp wasn’t horrible but the humidity was. Yuck. I feel so drained after a day like that. So glad I get 3 days off now. I’m actually really enjoying listening to the LOTR FOTR on audiobook in the evenings. I’ve always been intimidated by the scope and all the names… but I found a fan recorded version with excellent acting and foley. They even sing all the songs! And it’s free! How awesome. I decided to just not fret about the locations/names since I’ve never read it. I’ll just try to enjoy it and not like it’s my major in college. LOL.</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 25: What’s something silly, fun, or oddly specific you’d like to do before the month ends?</strong><br>
-Uhhh… I don’t think I have much like that planned. I want to go for a hike but the weather isn’t allowing that. I could write a July newsletter for the shop but I don’t have a ton of big news. Maybe do a bit more BeatSaber. I’ve been slacking. I don’t have anything silly in the forecast. Sorry!</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>✅ <strong>All habits completed</strong></li>
-<li>⚠️ <strong>1 task incomplete</strong> (missed watering plants)</li>
-<li>✨ <strong>Mood</strong>: drained but content</li>
-<li>🏷️ <strong>Tags</strong>: #lotr #audiobooks #planner</li>
 </ul>
 
     ]]></content>
