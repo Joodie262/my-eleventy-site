@@ -23,4 +23,5 @@ I'm a creator of cozy things, thoughtful stickers, and intentional online spaces
 
 **Email:** [judy@judywinsor.com](mailto:judy@judywinsor.com)  
 **Location:** Wisconsin, USA
+
 **Current obsessions:** rock tumbling, crochet, and Obsidian
