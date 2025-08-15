@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
@@ -26,17 +27,19 @@
   <article class="h-entry">
 <h1 class="p-name">{{ title }}</h1>
 <small><p class="published">
-    <time class="dt-published"
-      datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
-  Date Published: {{ date | formatDate("MMMM d, yyyy") }}
+    <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><time class="dt-published"
+      datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">Date Published: {{ date | formatDate("MMMM d, yyyy") }}
 </time>
   </p>
   <p class="p-author h-card">
-  Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
+  <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "user", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
 </p>
 {% endif %}
 {% if tags %}
-  <p class="post-tags">
+  <p class="post-tags"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "hash", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span>
     {% for tag in tags %}
       {% set lowerTag = tag | lower %}
       <a href="/tags/#{{ lowerTag | slug }}">{{ lowerTag }}</a>

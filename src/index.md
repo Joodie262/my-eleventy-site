@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-### Hello! Welcome to my smol website...
+#### Hello! Welcome to my smol website...
 Created with the principles of [IndieWeb](https://indieweb.org/principles)
 
 **A little intro**

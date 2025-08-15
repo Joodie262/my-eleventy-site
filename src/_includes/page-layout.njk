@@ -5,6 +5,7 @@
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
       href="https://journal.judywinsor.com/feed.atom" />
@@ -28,9 +29,9 @@
 {% endif %}
 {% if date %}
 <small><p class="published">
-  <time class="dt-published"
-        datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
-    Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
+  <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><time class="dt-published"
+        datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
   </time>
 </p></small>
 {% endif %}
