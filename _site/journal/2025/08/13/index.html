@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>August 13, 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/style.css?v=1755216076895">
+  <link rel="stylesheet" href="/style.css?v=1755217069351">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
       href="https://journal.judywinsor.com/feed.atom" />
@@ -267,33 +267,45 @@ Right now I'm watching &quot;The Vampire Diaries&quot; but I don't know how far 
 <svg xmlns="http://www.w3.org/2000/svg"      viewBox="0 0 24 24"            class="icon icon-tabler icons-tabler-outline icon-tabler-copyright meta-svg" width="18" height="18" stroke="currentColor" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" /></svg></span>2025 <a href="https://journal.judywinsor.com/about" rel="me">Judy Winsor</a></p>
       <p>Created with <a href="https://www.11ty.dev/">11ty</a> | <a href="#top"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
 <svg xmlns="http://www.w3.org/2000/svg"      viewBox="0 0 24 24"            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-up meta-svg" width="18" height="18" stroke="currentColor" fill="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" role="img"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M18 11l-6 -6" /><path d="M6 11l6 -6" /></svg></span>Back to Top</a> | 
-<small><button id="theme-toggle" class="theme-btn" type="button" aria-pressed="false">
-  Switch to teal
-</button></small></p>
+<small><button id="color-toggle" class="theme-btn" type="button">Switch to teal</button>
+<button id="mode-toggle"  class="theme-btn" type="button">Switch to dark</button></small></p>
         <p class="p-author h-card" style="display:none;">
   <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a></p>
+
 <script>
 (function () {
-  const root = document.documentElement;     // toggle class on <html>
-  const btn  = document.getElementById('theme-toggle');
+  const root  = document.documentElement; // <html>
+  const colorBtn = document.getElementById('color-toggle');
+  const modeBtn  = document.getElementById('mode-toggle');
 
-  // Restore saved choice (default = purple = no class)
-  const saved = localStorage.getItem('theme');
-  if (saved === 'teal') root.classList.add('theme-teal');
+  // Restore saved choices
+  const savedColor = localStorage.getItem('color'); // 'purple' | 'teal'
+  const savedMode  = localStorage.getItem('mode');  // 'light'  | 'dark'
+  if (savedColor === 'teal') root.classList.add('theme-teal');
+  if (savedMode  === 'dark') root.classList.add('mode-dark');
 
-  function renderLabel() {
+  function render() {
     const isTeal = root.classList.contains('theme-teal');
-    btn.textContent = isTeal ? 'Switch to purple' : 'Switch to teal';
-    btn.setAttribute('aria-pressed', String(isTeal));
+    const isDark = root.classList.contains('mode-dark');
+    colorBtn.textContent = isTeal ? 'Switch to purple' : 'Switch to teal';
+    modeBtn.textContent  = isDark ? 'Switch to light'  : 'Switch to dark';
+    colorBtn.setAttribute('aria-pressed', String(isTeal));
+    modeBtn.setAttribute('aria-pressed',  String(isDark));
   }
 
-  btn.addEventListener('click', () => {
+  colorBtn.addEventListener('click', () => {
     const isTeal = root.classList.toggle('theme-teal');
-    localStorage.setItem('theme', isTeal ? 'teal' : 'purple');
-    renderLabel();
+    localStorage.setItem('color', isTeal ? 'teal' : 'purple');
+    render();
   });
 
-  renderLabel();
+  modeBtn.addEventListener('click', () => {
+    const isDark = root.classList.toggle('mode-dark');
+    localStorage.setItem('mode', isDark ? 'dark' : 'light');
+    render();
+  });
+
+  render();
 })();
 </script>
 </footer>
