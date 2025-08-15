@@ -13,7 +13,7 @@ Created with the principles of [IndieWeb](https://indieweb.org/principles)
 **A little intro**
 
 I'm into cozy, creative things:
-* 🗓 Hobonichi & journaling
+* 🗓 Hobonichi & journaling - [Read my journals here](/journal-index.html)
 * 🖋 Fountain pens & stationery
 * 🎨 Crafts, zines, handmade stuff
 * 🌱 Slow living, soft aesthetics
