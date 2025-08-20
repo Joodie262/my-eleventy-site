@@ -9,10 +9,12 @@ eleventyNavigation:
 ---
 
 <h1>All Tags</h1>
+<span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "tag", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span>Every tag used in my posts. Alphabetical order.
 
 {% for tag in collections.tagList | sort %}
-  <h2 id="{{ tag | slug }}">{{ tag }}</h2>
-  <ul>
+  <h3 id="{{ tag | slug }}">{{ tag }}</h3>
+  <ul style="list-style:none; padding:1; margin:0.5;">
     {% for post in collections[tag] %}
       <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
     {% endfor %}

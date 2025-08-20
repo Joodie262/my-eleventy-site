@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="purple">
 <head>
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
@@ -25,18 +26,20 @@
 {% if page.url != "/tags/" %}
   <article class="h-entry">
 <h1 class="p-name">{{ title }}</h1>
-<p class="published">
-    <time class="dt-published"
-      datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">
-  Date Published: {{ date | formatDate("MMMM d, yyyy") }}
+<small><p class="published">
+    <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><time class="dt-published"
+      datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">Date Published: {{ date | formatDate("MMMM d, yyyy") }}
 </time>
   </p>
   <p class="p-author h-card">
-  Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
+  <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "user", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><Written By: <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
 </p>
 {% endif %}
 {% if tags %}
-  <p class="post-tags">
+  <p class="post-tags"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "hash", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span>
     {% for tag in tags %}
       {% set lowerTag = tag | lower %}
       <a href="/tags/#{{ lowerTag | slug }}">{{ lowerTag }}</a>
@@ -44,9 +47,23 @@
   </p>
 {% endif %}
 {% endif %}
+</small>
 
 <div class="e-content">
           {{ content | safe }}
+          {% if page.url != "/" %}
+          {% if page.url != "/tags/" %}
+          <div class="postend"><ul style="list-style:none; padding:0; margin:0;">
+  <li><a href="mailto:judy@judywinsor.com"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "mail", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span>Reply via email</a>
+  <li><a href="https://journal.judywinsor.com/feed.xml"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;">
+    {% icon "rss" %}
+  </span>Subscribe via RSS</a>
+  <li><a href="/journal-index.html"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "arrow-left", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span>Back to Posts</a>
+  </ul></div>
+  {% endif %}
+  {% endif %}
           </div>
   </article>
     </main>
@@ -67,6 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navToggle.setAttribute("aria-expanded", !expanded);
   });
 });
+</script>
+<script>
+  document.getElementById('theme-toggle').onclick = function() {
+    document.body.dataset.theme =
+      document.body.dataset.theme === 'theme-teal' ? '' : 'theme-teal';
+  };
 </script>
 </body>
 </html>

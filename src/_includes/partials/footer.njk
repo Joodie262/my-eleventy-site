@@ -1,14 +1,55 @@
     <footer>
     <p>
-  <a href="https://journal.judywinsor.com/now">/now</a> | 
-  <a href="https://journal.judywinsor.com/uses">/uses</a> | 
-  <a href="https://journal.judywinsor.com/links">/links</a> | 
-  <a href="https://journal.judywinsor.com/feed.xml">RSS</a> | 
+  <a href="/now">/now</a> | 
+  <a href="/uses">/uses</a> | 
+  <a href="/links">/links</a> | 
+  <a href="https://journal.judywinsor.com/feed.xml"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "rss", { class: "meta-svg", width: 18, height: 18 } %}</span>RSS</a> | 
   <a href="https://status.cafe/users/jwinsorart"><img src="https://status.cafe/users/jwinsorart/badge.png" alt="Status Cafe Profile"/></a>
 </p>
-      <p>&copy; 2025 <a href="https://journal.judywinsor.com/about" rel="me">Judy Winsor</a></p>
-      <p>Created with <a href="https://www.11ty.dev/">11ty</a> | <a href="#top">Back to Top</a></p>
+      <p><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "copyright", { class: "meta-svg", width: 18, height: 18 } %}</span>2025 <a href="https://journal.judywinsor.com/about" rel="me">Judy Winsor</a> <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;">{% icon "favicon" %}</span></p>
+      <p>Created with <a href="https://www.11ty.dev/">11ty</a> | <a href="#top"><span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
+{% icon "arrow-up", { class: "meta-svg", width: 18, height: 18 } %}</span>Back to Top</a> | 
+<small><button id="color-toggle" class="theme-btn" type="button">Switch to teal</button>
+<button id="mode-toggle"  class="theme-btn" type="button">Switch to dark</button></small></p>
         <p class="p-author h-card" style="display:none;">
-  <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a>
-</p>
-    </footer>
+  <a class="p-name u-url u-uid" rel="me" href="https://journal.judywinsor.com">Judy Winsor</a></p>
+
+<script>
+(function () {
+  const root  = document.documentElement; // <html>
+  const colorBtn = document.getElementById('color-toggle');
+  const modeBtn  = document.getElementById('mode-toggle');
+
+  // Restore saved choices
+  const savedColor = localStorage.getItem('color'); // 'purple' | 'teal'
+  const savedMode  = localStorage.getItem('mode');  // 'light'  | 'dark'
+  if (savedColor === 'teal') root.classList.add('theme-teal');
+  if (savedMode  === 'dark') root.classList.add('mode-dark');
+
+  function render() {
+    const isTeal = root.classList.contains('theme-teal');
+    const isDark = root.classList.contains('mode-dark');
+    colorBtn.textContent = isTeal ? 'Switch to purple' : 'Switch to teal';
+    modeBtn.textContent  = isDark ? 'Switch to light'  : 'Switch to dark';
+    colorBtn.setAttribute('aria-pressed', String(isTeal));
+    modeBtn.setAttribute('aria-pressed',  String(isDark));
+  }
+
+  colorBtn.addEventListener('click', () => {
+    const isTeal = root.classList.toggle('theme-teal');
+    localStorage.setItem('color', isTeal ? 'teal' : 'purple');
+    render();
+  });
+
+  modeBtn.addEventListener('click', () => {
+    const isDark = root.classList.toggle('mode-dark');
+    localStorage.setItem('mode', isDark ? 'dark' : 'light');
+    render();
+  });
+
+  render();
+})();
+</script>
+</footer>

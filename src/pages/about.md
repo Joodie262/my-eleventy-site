@@ -12,8 +12,9 @@ date: 2025-06-12
 I'm a creator of cozy things, thoughtful stickers, and intentional online spaces.
 
 ### More:
-- *[NOW](https://journal.judywinsor.com/now)* – What's happening right now in my life  
-- *[USES](https://journal.judywinsor.com/uses)* – What tools and tech I use
+- *[NOW](/now)* – What's happening right now in my life  
+- *[USES](/uses)* – What tools and tech I use
+- *[LINKS](/links)* - Where else you can find me
 
 ### Social:
 - [Mastodon](https://mastodon.social/@jwinsorart)
@@ -22,7 +23,5 @@ I'm a creator of cozy things, thoughtful stickers, and intentional online spaces
 
 **Email:** [judy@judywinsor.com](mailto:judy@judywinsor.com)  
 **Location:** Wisconsin, USA
-
----
 
 **Current obsessions:** rock tumbling, crochet, and Obsidian
