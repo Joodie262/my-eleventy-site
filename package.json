@@ -6,7 +6,8 @@
     "scripts": {
         "start": "eleventy --serve",
         "build": "eleventy",
-        "deploy": "npm run build && gh-pages -d _site"
+        "deploy": "npm run build && gh-pages -d _site",
+        "build:gh": "PATH_PREFIX=/my-eleventy-site/ eleventy"
     },
     "keywords": [
         "eleventy",

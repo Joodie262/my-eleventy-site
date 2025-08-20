@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="{{ '/style.css' | versioned }}">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/style.css' | versioned | url }}">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
       href="https://journal.judywinsor.com/feed.atom" />
@@ -14,7 +14,7 @@
 <body>
   <div class="site-container">
     <header>
-      <h1><a href="/">Judy Winsor</a></h1>
+      <h1><a href="{{ '/' | url }}">Judy Winsor</a></h1>
       <p class="subtitle">Personal website of Judy Winsor</p>
     </header>
 
@@ -28,12 +28,12 @@
   <h3 class="subtitle">{{ subtitle }}</h3>
 {% endif %}
 {% if date %}
-<small><p class="published">
+<p class="published"><small>
   <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
 {% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><time class="dt-published"
         datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
   </time>
-</p></small>
+</small></p>
 {% endif %}
 <div class="e-content">
           {{ content | safe }}

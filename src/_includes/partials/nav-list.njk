@@ -12,7 +12,7 @@
           <summary>
             <button class="nav-toggle-child" aria-label="Toggle submenu"
               onclick="this.closest('details').open = !this.closest('details').open; event.stopPropagation();"></button>
-            <a href="{{ item.url }}"
+            <a href="{{ item.url | url }}"
                class="nav-parent-link"
                {% if item.isCurrent %}aria-current="page"{% endif %}>
               {{ item.title }}
@@ -22,7 +22,7 @@
           <ul class="dropdown">
             {%- for child in kids -%}
               <li>
-                <a href="{{ child.url }}"{% if child.isCurrent %} aria-current="page"{% endif %}>
+                <a href="{{ child.url | url }}"{% if child.isCurrent %} aria-current="page"{% endif %}>
                   {{ child.title }}
                 </a>
               </li>
@@ -30,16 +30,14 @@
           </ul>
         </details>
       {% else %}
-        <a href="{{ item.url }}"{% if item.isCurrent %} aria-current="page"{% endif %}>
+        <a href="{{ item.url | url }}"{% if item.isCurrent %} aria-current="page"{% endif %}>
           {{ item.title }}
         </a>
       {% endif %}
     {% endmacro %}
 
-    {# --- Only add a separator before items after the first actually-rendered one --- #}
     {% set printedCount = 0 %}
     {% for entry in navPages %}
-      {# guard in case an entry ends up intentionally skipped later #}
       {% set willRender = entry.title and (entry.url or entry.children.length) %}
       {% if willRender %}
         {% if printedCount > 0 %}

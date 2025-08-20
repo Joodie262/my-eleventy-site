@@ -12,9 +12,9 @@ date: 2025-06-12
 I'm a creator of cozy things, thoughtful stickers, and intentional online spaces.
 
 ### More:
-- *[NOW](/now)* – What's happening right now in my life  
-- *[USES](/uses)* – What tools and tech I use
-- *[LINKS](/links)* - Where else you can find me
+- *[NOW]({{ '/now/' | url }})* – What's happening right now in my life  
+- *[USES]({{ '/uses/' | url }})* – What tools and tech I use  
+- *[LINKS]({{ '/links/' | url }})* – Where else you can find me
 
 ### Social:
 - [Mastodon](https://mastodon.social/@jwinsorart)
