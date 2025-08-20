@@ -8,8 +8,8 @@ eleventyNavigation:
 
 <div class="h-feed">
   <p>
-    <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;">
-      {% icon "notebook", { class: "meta-svg", width: 18, height: 18, style: "display:inline-block; margin-right:1.5rem;" } %}
+    <span class="meta-svg" style="display:inline-block; margin-right:0.2rem; vertical-align:middle;">
+      {% icon "notebook", { class: "meta-svg", width: 18, height: 18, style: "display:inline-block; margin-right:0.2rem;" } %}
     </span>
     Analog journal pages gone digital.<br />
     <small>Just everyday thoughts from an everyday gal. Blending my love of analog and digital content. Listed in reverse chronological order.</small>

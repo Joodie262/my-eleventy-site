@@ -4,10 +4,17 @@
     "description": "A retro lavender/plum themed Eleventy starter inspired by Grav.",
     "main": "index.js",
     "scripts": {
-        "start": "eleventy --serve",
+        "clean": "rimraf _site _ghsite",
+        "serve": "cross-env PATH_PREFIX=/ OUT_DIR=_site eleventy --serve",
+        "start": "npm run serve",
+        "serve:gh": "cross-env PATH_PREFIX=/my-eleventy-site/ OUT_DIR=_ghsite eleventy --serve",
         "build": "cross-env PATH_PREFIX=/ OUT_DIR=_site eleventy",
         "build:gh": "cross-env PATH_PREFIX=/my-eleventy-site/ OUT_DIR=_ghsite eleventy",
-        "deploy": "npm run build:gh && gh-pages -d _ghsite"
+        "build:both": "npm run clean && npm run build && npm run build:gh",
+        "predeploy": "npm run build:gh",
+        "deploy": "gh-pages -d _ghsite",
+        "release": "npm run build:both && npm run deploy",
+        "help": "node -e \"console.log('Commands:\\n  npm start        Serve root\\n  npm run serve:gh Serve with GH prefix\\n  npm run build    Build to _site\\n  npm run build:gh Build to _ghsite\\n  npm run deploy   Deploy GH Pages\\n  npm run release  Build both + deploy');\""
     },
     "keywords": [
         "eleventy",
