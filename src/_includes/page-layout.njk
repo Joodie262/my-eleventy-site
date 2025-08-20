@@ -30,7 +30,7 @@
 {% if date %}
 <p class="published"><small>
   <span class="meta-svg" style="display:inline-block; margin-right:0.3rem; vertical-align:middle;"><!-- Decorative (ignored by screen readers) -->
-{% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:1.5rem;" } %}</span><time class="dt-published"
+{% icon "calendar", { class: "meta-svg", width: 14, height: 14, style: "display:inline-block; margin-right:0.2rem;" } %}</span><time class="dt-published"
         datetime="{{ date | formatDate("yyyy-LL-dd'T'HH:mmZZ") }}">Last Updated: {{ date | formatDate("MMMM d, yyyy") }}
   </time>
 </small></p>

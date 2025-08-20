@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "start": "eleventy --serve",
-        "build": "eleventy",
-        "deploy": "npm run build && gh-pages -d _site",
-        "build:gh": "PATH_PREFIX=/my-eleventy-site/ eleventy"
+        "build": "cross-env PATH_PREFIX=/ OUT_DIR=_site eleventy",
+        "build:gh": "cross-env PATH_PREFIX=/my-eleventy-site/ OUT_DIR=_ghsite eleventy",
+        "deploy": "npm run build:gh && gh-pages -d _ghsite"
     },
     "keywords": [
         "eleventy",
@@ -21,6 +21,7 @@
     "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-navigation": "^1.0.4",
+        "cross-env": "^10.0.0",
         "gh-pages": "^6.3.0"
     },
     "dependencies": {
