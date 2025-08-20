@@ -5,7 +5,7 @@
   <title>July 13, 2025</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/style.css?v=1755230610849">
+  <link rel="stylesheet" href="/style.css?v=1755720874655">
   <link rel="alternate" type="application/atom+xml"
       title="Judy Winsor — Journal Atom Feed"
       href="https://journal.judywinsor.com/feed.atom" />
@@ -314,17 +314,54 @@ Uh it's hot out there so stay inside! Haha. I'm trying to think… Maybe to appr
 </script>
 </footer>
   </div>
-  <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
-  const navToggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav");
+  const navToggle = nav.querySelector(".nav-toggle");
   const siteMenu = document.getElementById("site-menu");
 
-  navToggle.addEventListener("click", function () {
-    siteMenu.classList.toggle("show");
+  const isOpen = () => siteMenu.classList.contains("show");
 
-    // Update aria-expanded for accessibility
-    const expanded = navToggle.getAttribute("aria-expanded") === "true" || false;
-    navToggle.setAttribute("aria-expanded", !expanded);
+  function openMenu() {
+    siteMenu.classList.add("show");
+    navToggle.setAttribute("aria-expanded", "true");
+  }
+
+  function closeMenu() {
+    siteMenu.classList.remove("show");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+
+  function toggleMenu() {
+    isOpen() ? closeMenu() : openMenu();
+  }
+
+  // Toggle button
+  navToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Click/tap outside closes the menu
+  function outsideHandler(e) {
+    if (!isOpen()) return;
+    if (!nav.contains(e.target)) closeMenu();
+  }
+  document.addEventListener("click", outsideHandler);
+  document.addEventListener("touchstart", outsideHandler, { passive: true });
+
+  // Escape key closes
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && isOpen()) {
+      closeMenu();
+      navToggle.focus();
+    }
+  });
+
+  // Close after clicking any link in the menu (optional)
+  siteMenu.addEventListener("click", function (e) {
+    const link = e.target.closest("a");
+    if (link && isOpen()) closeMenu();
   });
 });
 </script>
