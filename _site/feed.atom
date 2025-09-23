@@ -1,13 +1,613 @@
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <title>Judy Winsor — Journal</title>
   <id>https://journal.judywinsor.com</id>
-  <updated>2025-08-24T00:00:00Z</updated>
+  <updated>2025-09-01T00:00:00Z</updated>
   <generator>Eleventy</generator>
 
   <!-- self + site links -->
   <link rel="self" href="https://journal.judywinsor.com/feed.atom" type="application/atom+xml" />
   <link rel="alternate" href="https://journal.judywinsor.com" type="text/html" />
 
+  
+  <entry>
+    <title>September 1, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/09/01/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/09/01/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-09-01T00:00:00Z</updated>
+    <published>2025-09-01T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#shop_work" />
+      
+        <category term="#hobonichi" />
+      
+        <category term="#fall_favorites" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Water plants</li>
+<li>[x] Bath</li>
+<li>[x] Accounting</li>
+<li>[x] Bring up laundry</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 27 min, 86% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] am meds</li>
+<li>[x] planner fill</li>
+<li>[x] self care</li>
+<li>[x] shop orders</li>
+<li>[x] noon meds</li>
+<li>[x] no spend</li>
+<li>[x] CM + H logs</li>
+<li>[ ] yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>epitome</strong> <em>(noun)</em></p>
+<ul>
+<li>a perfect example; usually used in the phrase &quot;the epitome of,&quot; as in &quot;the epitome of elegance.&quot;</li>
+</ul>
+<blockquote>
+<p>In his tailored suit and fashionable haircut, he was the very epitome of style.</p>
+</blockquote>
+<h2>Journal</h2>
+<p>Got all my monthly accounting and tracking done for August first thing today. I basically took the whole month off from social media, so that part was quick. I even restocked some low items and filled orders for tomorrow. It was a deeply productive long weekend, but it also made me pretty tired.</p>
+<p>I can’t believe I totally forgot about the 2026 Hobonichi release time for over an hour yesterday. I did watch the Yoseka Countdown party livestream on YouTube once I made my purchases. Haha, just participating on my own weird timeline.</p>
+<h2>Prompt</h2>
+<p><strong>Prompt 1: What’s your favorite thing to wear when the seasons change?</strong><br>
+I love boots when it’s colder. But the hoodie is a classic. Nothing cozier than a hoodie. I have a lot of favorites and miss them in the summer. Plus that big pocket in front is just plain practical. Not a ton of women’s clothes with pockets that large. Plus they just feel heavy and that’s just so relaxing.</p>
+<p>Fall is the best season for fashion. Love a plaid button down or a light jacket, or a fuzzy fleece. Oh there’s so many options! I can’t wait for it to cool down outside now.</p>
+<hr>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8 hr 27 min)</li>
+<li>⚠️ <strong>Missed habits</strong>: yoga/movement</li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: productive but tired</li>
+<li>🏷️ <strong>Tags</strong>: #shop_work #hobonichi #fall_favorites</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 31, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/31/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/31/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-31T00:00:00Z</updated>
+    <published>2025-08-31T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#decluttering" />
+      
+        <category term="#hobonichi" />
+      
+        <category term="#fatigue" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Monthly/weekly planning</li>
+<li>[x] Refill pillbox</li>
+<li>[x] Trash day</li>
+<li>[x] Spray cover</li>
+<li>[ ] Water plants</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>9 hr 13 min — 79% fair</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] Am meds</li>
+<li>[x] Planner fill</li>
+<li>[x] Self care</li>
+<li>[x] Shop orders</li>
+<li>[x] Noon meds</li>
+<li>[ ] No spend</li>
+<li>[x] Cm + H logs</li>
+<li>[ ] Yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>Simpatico</strong> <em>(adj.)</em></p>
+<ul>
+<li>Typically describes two or more people or things with shared qualities, interests, etc.</li>
+<li>Can also describe someone who is agreeable or likeable.</li>
+</ul>
+<blockquote>
+<p><em>Even though they weren’t always simpatico with regard to the direction of their company, the pair managed to be successful partners for more than 35 years.</em></p>
+</blockquote>
+<h2>Journal</h2>
+<p>Phew! Yesterday was a lot of work. My back is sore today. And now that I moved furniture around I sort of need to go through piles of stationery that had accumulated without a home. So I probably need to spend most of today in a similar &quot;cleaning mode&quot; even though I'm tired. Maybe tomorrow will be my recovery day.</p>
+<p>Later: Spent the whole day decluttering part of my room. It was a lot harder than expected and my brain was completely fried from decision fatigue. I did get 2 trash cans full and out of my room.</p>
+<p>Then... because FATIGUE—I watched a Marvel movie with M. And I totally forgot the Hobonichi launch!!! I didn’t remember for over an hour when I got upstairs for the night time and looked at my phone. Soooo I got everything I wanted but I had to buy from two stores. Not perfect but not a big deal either. Now it’s just the wait for what will feel like an eternity before it all arrives. Did all USA shops since the tariffs are a giant mystery. Can’t wait to see people unbox their planners in vlogs on YouTube.</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (over 8h15m)</li>
+<li>⚠️ <strong>Missed habits</strong>: no spend, yoga/movement</li>
+<li>⚠️ <strong>Missed task</strong>: water plants</li>
+<li>✨ <strong>Mood</strong>: tired but productive, decision fatigue</li>
+<li>🏷️ <strong>Tags</strong>: #decluttering #hobonichi #fatigue</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 30, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/30/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/30/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-30T00:00:00Z</updated>
+    <published>2025-08-30T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#cleaning" />
+      
+        <category term="#selfcare" />
+      
+        <category term="#summer" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Clean mold</li>
+<li>[x] Change sheets</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 26 min, 84% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] Am meds</li>
+<li>[x] Planner fill</li>
+<li>[x] Self care</li>
+<li>[x] Shop orders</li>
+<li>[x] Noon meds</li>
+<li>[x] No spend</li>
+<li>[x] CM + H logs</li>
+<li>[x] Yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>protocol</strong> <em>(noun)</em></p>
+<ul>
+<li>most often refers to a system of rules explaining the correct conduct and procedures to be followed in a formal situation</li>
+<li>computer programming: a set of rules used in formatting data</li>
+<li>can also refer to rules for a scientific experiment or medical treatment, or a document that describes the details of a diplomatic treaty</li>
+</ul>
+<blockquote>
+<p><em>What is the proper protocol for declining a job offer?</em></p>
+</blockquote>
+<h2>Journal</h2>
+<p>I spent the whole day cleaning one little corner of my bedroom. It somehow got a bit of mold. I think I pushed my nightstand too close to a wall that gets cold in Spring and Winter, so the air stopped circulating. So yeah. Scrubbed it all off. Then let it soak with vinegar for an hour. Tomorrow I’ll do a final layer of Borax because it’s supposed to inhibit growth. But I also got a fan and a DampRid to keep that corner dry forever. It sucks that it grew at all. I’ve never had that happen before. But it was just my furniture choice and me not knowing to check that created this problem so it shouldn’t happen again. I might even repaint with that special Kilz paint so it’s even more secure. But I need to move my bed which just… isn’t moveable. So IDK how to solve that problem yet.</p>
+<p>So yeah, a rough day but I figured since it’s a long weekend for me it would be a good time to get it done. I cut some sticker sheets to add to my inventory too. So I can only hope tomorrow is a little more balanced with… fun or rest. Oh and how could I forget! We got our first local sweet corn of the season. Some of it was affected by our recent flooding so some kernels were burst open, but it was so yummy. 1st one is the best!</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8 hr 26 min)</li>
+<li>✅ <strong>All habits completed</strong></li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: tired but productive</li>
+<li>🏷️ <strong>Tags</strong>: #cleaning #selfcare #summer</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 29, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/29/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/29/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-29T00:00:00Z</updated>
+    <published>2025-08-29T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#beach_day" />
+      
+        <category term="#outdoor_time" />
+      
+        <category term="#rock_hunting" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Beach visit</li>
+<li>[x] Shower</li>
+<li>[x] Laundry</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 29 min — 85% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] am meds</li>
+<li>[x] planner fill</li>
+<li>[x] self care</li>
+<li>[x] shop orders</li>
+<li>[x] noon meds</li>
+<li>[x] no spend</li>
+<li>[x] cm + h logs</li>
+<li>[x] yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>incisive</strong> <em>(adj.)</em></p>
+<ul>
+<li>impressively direct and decisive; it is generally applied to something communicated in a way that is very clear and direct, or to a person who is able to explain difficult ideas clearly and confidently.</li>
+</ul>
+<blockquote>
+<p>The columnist is known for her incisive commentary on local politics.</p>
+</blockquote>
+<p><em>Not sure if I’ve ever heard this word!</em> Well it feels like I have but I didn't really get the meaning.</p>
+<h2>Journal</h2>
+<p>I’m going to try to have the most mosquito-bite-free outdoor experience possible today during PEAK mosquito season. I’m going to try to keep long sleeves/pants, I’ll use my Picaridin lotion, and I’m going to a sandy beach which hopefully means wind. Maximal comfort strategy engaged. I’ll probably focus more on the walk aspect than any rock hunting if the bugs are noticeably bad. At least a little outdoor time is better than none. I’ll report back on the excursion later!</p>
+<p>Report: Not one. Single. Bug. Yay! IDK if it was the clothing or bug spray or the wind but it was my most perfect outdoor day. The waves were up really high so all the rocks were underwater (well, the good ones at least!) but I didn’t mind. I did get a tiny blister on my pinkie toe because I wore my sandals when they were wet. But in my defense that was because last time I walked barefoot I got bruises on the bottom of my feet so I was trying to prevent that. It’s dangerous out there!</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8 hr 29 min)</li>
+<li>✅ <strong>All habits completed</strong></li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: relaxed and content</li>
+<li>🏷️ <strong>Tags</strong>: #beach_day #outdoor_time #rock_hunting</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 28, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/28/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/28/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-28T00:00:00Z</updated>
+    <published>2025-08-28T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#work_day" />
+      
+        <category term="#sales" />
+      
+        <category term="#tongue_pain" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Work day</li>
+<li>[x] Mail orders</li>
+<li>[ ] Water plants</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 31 min, 85% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] am meds</li>
+<li>[x] Planner fill</li>
+<li>[ ] Self care</li>
+<li>[x] Shop orders</li>
+<li>[x] noon meds</li>
+<li>[x] No spend</li>
+<li>[x] CM + H logs</li>
+<li>[x] Yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>diminution</strong> <em>(noun)</em></p>
+<ul>
+<li>a formal word that refers to the act or process of becoming less.</li>
+</ul>
+<blockquote>
+<p>The company is committed to seeing that efforts to scale up production do not result in a diminution of quality.</p>
+</blockquote>
+<h2>Journal</h2>
+<p>I wanted/needed to get a lot of work for the business done yesterday but I just got technical issues instead. I’m still annoyed about it. But some important stuff did get finished so it wasn’t a total loss.</p>
+<p>I sold my first Halloween Cookie sheet and my Colored Holidays sheet. That always feels great. It’s like a proof of concept that yes, that work you did was indeed worth it to at least one person.</p>
+<p>I have the weirdest pain on my tongue. I noticed it yesterday but it kept getting worse into the evening. I don’t know if it’s from the dentist last week or if I bit it in my sleep somehow? It’s making it kind of hard to chew and talk. Usually mouth stuff heals super fast though so I hope it just goes away on its own. I don’t think there’s much medicine that’s useful here.</p>
+<h2>Prompt</h2>
+<p><strong>Prompt 28: Which everyday object would you enchant to have magical powers?</strong><br>
+Car → teleports.<br>
+Bed → has a sleep on switch, for instantly falling asleep.<br>
+Bathtub → automatically cleans me and washes my hair and all that.<br>
+Closet → adjusts all clothing to a perfect fit for me.<br>
+I can't pick just one!</p>
+<hr>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8 hr 31 min)</li>
+<li>⚠️ <strong>Missed habits</strong>: self care</li>
+<li>⚠️ <strong>Not all tasks completed</strong> (missed watering plants)</li>
+<li>✨ <strong>Mood</strong>: Productive but annoyed at setbacks</li>
+<li>🏷️ <strong>Tags</strong>: #work_day #sales #tongue_pain</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 27, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/27/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/27/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-27T00:00:00Z</updated>
+    <published>2025-08-27T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#hobonichi" />
+      
+        <category term="#sticker_shop" />
+      
+        <category term="#frustration" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] HF delivery</li>
+<li>[x] Mail order</li>
+<li>[x] Hair wash</li>
+<li>[x] Sept. prompts</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 41 min — 85% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] Am meds</li>
+<li>[x] Planner fill</li>
+<li>[x] Self care</li>
+<li>[x] Shop orders</li>
+<li>[x] Noon meds</li>
+<li>[x] No spend</li>
+<li>[x] CM + H logs</li>
+<li>[ ] Yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>nebulous</strong> <em>(adj.)</em></p>
+<ul>
+<li>A formal word used to describe something that is difficult to see, understand, or describe; in other words, something indistinct or vague.</li>
+</ul>
+<blockquote>
+<p>A lot of philosophical concepts can seem nebulous at first, but a good instructor can cut through the jargon and help students see how they apply to day-to-day life.</p>
+</blockquote>
+<h2>Journal</h2>
+<p>I'm having a hard time trying to decide what Hobonichi planners to get for 2026. I know I need the A5 Avec—that’s my daily darling. But if I design stickers for the other sizes I want something to test them in. I like to see something tangible before I release it. I do have empty pages from my 2025 A6 and Weeks but I feel weird combining tests with real planning for some reason? IDK. It’s just expensive too. I’m trying to save up for a laptop this year and I just don’t know how to decide. I used my A6 + Weeks very sporadically/randomly. The A6 was more mental health/personal but I find it hard to write in at that size. I don’t do small well. I try not to feel guilty for empty pages but with money being a lot tighter I’m trying to be careful.</p>
+<p>Later: Today was kind of frustrating really. My main cut machine malfunctioned and I spent over an hour troubleshooting. And my 2nd machine did fail later in the evening too. On a day I was finding work a bit overwhelming before any of that happened. Just nothing to say other than: annoyed. At least I got all of the September journaling prompts done and posted everywhere. Just a mixed bag of a day. Tried my best.</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8h 41m)</li>
+<li>⚠️ <strong>Missed habits</strong>: yoga/movement</li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: frustrated but productive</li>
+<li>🏷️ <strong>Tags</strong>: #hobonichi #sticker_shop #frustration</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 26, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/26/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/26/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-26T00:00:00Z</updated>
+    <published>2025-08-26T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#therapy" />
+      
+        <category term="#education" />
+      
+        <category term="#reflection" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Kristin 2pm</li>
+<li>[x] HVAC servicing</li>
+<li>[x] Mail orders</li>
+<li>[x] Bath</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>7 hr 49 min — 81% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] am meds</li>
+<li>[x] planner fill</li>
+<li>[x] self care</li>
+<li>[x] shop orders</li>
+<li>[x] noon meds</li>
+<li>[x] no spend</li>
+<li>[x] CM + H logs</li>
+<li>[ ] yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>trepidation</strong> <em>(noun)</em></p>
+<ul>
+<li>Refers to a feeling of fear that causes someone to hesitate because they think that something bad or unpleasant is going to happen.</li>
+</ul>
+<blockquote>
+<p>The students felt a sense of trepidation upon being summoned to the principal’s office.</p>
+</blockquote>
+<h2>Journal</h2>
+<p>I watched a random YouTube video last night from Wired (I think) where they asked a teacher a bunch of questions. She had the best energy and attitude ever. I actually teared up because she seemed so awesome and caring. But then I couldn’t fall asleep because it brought up so many emotions.</p>
+<p>The public school system failed me. It’s always hard for me to think about high school particularly. So my mind just couldn’t quiet down for sleep. My heart aches for any child who doesn’t fit perfectly into that system (or just can’t find a way to make it work).</p>
+<p>I wish all teachers could be empathetic and flexible with all the unique types of students. She said something I loved: “Every student is in their own right place at the right time.” Like if someone learns “faster” or “slower,” it’s all okay—that’s just their pace. How silly is it that just because you’re at a certain age you’re all supposed to know the exact same stuff.</p>
+<p>Life happens. I wish teachers had more resources and more influence over customizing their teaching for all the types of kids they teach. It just brought up so many emotions. I wish I could have thrived more in school. I wish every child had an amazing teacher who was kind and compassionate to them. I wish emotional skills and kindness were part of every education.</p>
+<p>I wish. I wish. Kids deserve better than a one-size-fits-all approach.</p>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (7 hr 49 min, good quality)</li>
+<li>⚠️ <strong>Missed habits</strong>: yoga/movement</li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: reflective and emotional</li>
+<li>🏷️ <strong>Tags</strong>: #therapy #education #reflection</li>
+</ul>
+
+    ]]></content>
+  </entry>
+  
+  <entry>
+    <title>August 25, 2025</title>
+
+    <!-- canonical id + link -->
+    <id>https://journal.judywinsor.com/journal/2025/08/25/</id>
+    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/25/" type="text/html" />
+
+    <!-- dates -->
+    <updated>2025-08-25T00:00:00Z</updated>
+    <published>2025-08-25T00:00:00Z</published>
+
+    <!-- author -->
+    <author><name>Judy Winsor</name></author>
+
+    <!-- tags -->
+    
+      
+        <category term="#workday" />
+      
+        <category term="#weather" />
+      
+        <category term="#crochet" />
+      
+    
+
+    <!-- full HTML content -->
+    <content type="html"><![CDATA[
+      <h2>Tasks</h2>
+<ul>
+<li>[x] Work day</li>
+<li>[x] Mail orders</li>
+<li>[x] Manicure</li>
+</ul>
+<h2>Sleep</h2>
+<ul>
+<li>8 hr 29 min — 86% good</li>
+</ul>
+<h2>Habits</h2>
+<ul>
+<li>[x] am meds</li>
+<li>[x] planner fill</li>
+<li>[x] self care</li>
+<li>[x] shop orders</li>
+<li>[x] noon meds</li>
+<li>[x] no spend</li>
+<li>[x] cm + hlogs</li>
+<li>[x] yoga/movement</li>
+</ul>
+<h2>Word</h2>
+<p><strong>Undulant</strong> <em>(adjective)</em></p>
+<ul>
+<li>Describes things that rise and fall in waves, or things that have a wavy form, outline, or surface.</li>
+</ul>
+<blockquote>
+<p><em>The exhibit featured a painting with beautiful green strokes that resembled undulant hills.</em></p>
+</blockquote>
+<p><em>(I knew the word &quot;undulating,&quot; so I could guess this one, but I don’t think I’ve heard &quot;undulant&quot; being used that much.)</em></p>
+<h2>Journal</h2>
+<p>Another perfect weather day today. But it’s a workday, so I’ll be stuck inside for most of it. Oh well! This whole week is going to be cooler than average, so I’ll just embrace it when I can. I can’t believe August is already ending this week. I’ll have all my normal accounting/spreadsheets to fill out. I also need to finish the September journaling prompts. I really liked August’s. They were fun but also made you think. It was a good vibe.</p>
+<p>Tomorrow morning our furnace is getting its annual servicing. Hopefully the temp stays cool so running the furnace doesn’t warm me up. Hah!</p>
+<h2>Prompt</h2>
+<p><strong>Prompt 25: What’s the most “you” thing you’ve done this month?</strong><br>
+Easy. I started a large crochet project. Made a lot of fast initial progress… and then when the task felt slightly overwhelming and slow, I halted completely. The dopamine just wasn’t hitting. Sooo… my poor Mushroom Guy plushie has a head and 2/3 of a body but now has just been abandoned for an unknown amount of time. CLASSIC ME!</p>
+<p>I have my place marked and all the instructions are marked too. So at any point I can pick it up again. It’s just the most “me” thing ever. I’m a super strong starter of projects. Finishing is not my specialty, however. At least I try new things and get joy from the parts I do!</p>
+<hr>
+<h2>📌 Summary</h2>
+<ul>
+<li>✅ <strong>Great sleep</strong> (8h 29m, 86%)</li>
+<li>✅ <strong>All habits completed</strong></li>
+<li>✅ <strong>All tasks completed</strong></li>
+<li>✨ <strong>Mood</strong>: reflective and steady</li>
+<li>🏷️ <strong>Tags</strong>: #workday #weather #crochet</li>
+</ul>
+
+    ]]></content>
+  </entry>
   
   <entry>
     <title>August 24, 2025</title>
@@ -904,601 +1504,6 @@ Right now I'm watching &quot;The Vampire Diaries&quot; but I don't know how far 
 <li>✅ <strong>All tasks completed</strong></li>
 <li>✨ <strong>Mood</strong>: reflective but mildly frustrated</li>
 <li>🏷️ <strong>Tags</strong>: #selfcare #burnoutrecovery #productdesign</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 12, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/12/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/12/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-12T00:00:00Z</updated>
-    <published>2025-08-12T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#dentist" />
-      
-        <category term="#storm" />
-      
-        <category term="#flooding" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[ ] Dentist 2pm → cancelled</li>
-<li>[x] Mail orders</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>9 hr 5 min — 84% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] s.m. post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] cm + h logs</li>
-<li>[ ] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>ramshackle</strong> <em>(adj.)</em></p>
-<ul>
-<li>describes things that are in a very bad condition and need to be repaired, or that are carelessly or loosely constructed</li>
-</ul>
-<blockquote>
-<p>Toward the back of the property sat a ramshackle old shed.<br>
-The book had a ramshackle plot that was confusing and unbelievable.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>Ugh I have to be an adult today and take care of my body for future me. Present day me is annoyed. I know lots of people don’t like the dentist and try to be mature about it. It will just never not be weird to have someone all up in my personal space bubble like that. I just find it awkward and that’s that. My sensory system hates it. Unfortunately it will probably drain all my good creative energy for the day so I’m not planning on any big projects for the day.</p>
-<p><strong>Cancelled</strong> — Well the dentist called and had to cancel because they don’t have any power. The flooding backed up more in town, and we had a windy storm last night. I guess more places lost power. What a mess.</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 12:</strong> If you could swap lives with a fictional character for one day, who would it be?<br>
-Maybe a Dr. Strange type person. If I could teleport and see a bunch of world landmarks in a day that would be so cool. And the power to control reality, yeah. I don’t love travel or sleeping in hotels so just a quick trip around the world for zero money. Seems like the best way to maximize one day of a borrowed life.</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm post, yoga/movement</li>
-<li>⚠️ <strong>Some tasks incomplete</strong>: Dentist cancelled</li>
-<li>✨ <strong>Mood</strong>: drained but relieved</li>
-<li>🏷️ <strong>Tags</strong>: #dentist #storm #flooding</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 11, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/11/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/11/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-11T00:00:00Z</updated>
-    <published>2025-08-11T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#flooding" />
-      
-        <category term="#workday" />
-      
-        <category term="#irrational_fear" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] Work</li>
-<li>[x] Pickup Rx</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 40 min — 87% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] Am meds</li>
-<li>[x] Planner fill</li>
-<li>[ ] S.M. post</li>
-<li>[x] Shop orders</li>
-<li>[x] Noon meds</li>
-<li>[x] No spend</li>
-<li>[x] Cm + H logs</li>
-<li>[x] Yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>stipulate</strong> <em>(verb)</em></p>
-<ul>
-<li>to demand or require something as part of an agreement</li>
-</ul>
-<blockquote>
-<p>The rules stipulate that players must wear uniforms.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>Phew no major rainfall last night. Just a short storm. Hopefully it didn’t make the flooding much worse. My aunt went to the Falls and apparently it stinks so bad they didn’t stop to look. How sad! And I’ve seen countless people wading into it with their kids to play. Oh the bacteria of it all. Do they not watch the news or what? M. says the lake has receded a bit overnight so that’s good. We got sooo lucky. I’m so grateful. I may have lost a little sleep but not having to gut our basement or be trapped in our neighborhood is a wonderful blessing. Hopefully none of the roads I take to work got flooded!</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 11: What's your most irrational fear that you know is silly, but still have?</strong><br>
-No origin story but I’m terrified of walking behind people fishing. I have a fear that they’ll swing back their pole to get the line out and it will instead catch on my face and hook me. It’s such a specific thing… maybe I had a nightmare like that or something. I just do NOT want to walk near anyone that’s fishing at all.</p>
-<p>Much later: Let’s all just agree that Bachelor in Paradise is a ridiculous show. I don’t know why hate-watching something feels so cathartic though?</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm_post</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: relieved and grateful</li>
-<li>🏷️ <strong>Tags</strong>: #flooding #workday #irrational_fear</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 10, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/10/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/10/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-10T00:00:00Z</updated>
-    <published>2025-08-10T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#flooding" />
-      
-        <category term="#home" />
-      
-        <category term="#storm" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] Weekly planning</li>
-<li>[x] Refill pillboxes</li>
-<li>[x] Bath</li>
-<li>[x] Trash day</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>6 hr 59 min — 78% fair</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] Am meds</li>
-<li>[x] Planner fill</li>
-<li>[ ] S.M. post</li>
-<li>[x] Shop orders</li>
-<li>[x] Noon meds</li>
-<li>[x] No spend</li>
-<li>[x] Cm &amp; H logs</li>
-<li>[x] Yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>hidebound</strong> <em>(adj.)</em></p>
-<ul>
-<li>Someone or something that is inflexible and unwilling to accept new or different ideas.</li>
-</ul>
-<blockquote>
-<p>Although somewhat stuffy and strict, the professor did not so completely adhere to hidebound academic tradition that he wouldn’t teach class outside on a especially lovely day.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>Wow last night we got over 10 inches of rain. The thunder was so loud I couldn’t fall asleep. Then around 3 a.m. our basement water alarms went off. Went to check it out and the sump pump was full. There was water leaking in from the walls and up from a crack in the floor (that I don’t think was there before). I’ve never seen anything like it. There wasn’t much to do. We turned the sump pump off and on again and it started to work again. So it was hard to settle down for sleep after that but I eventually did! Our rivers are like 2 feet higher than ever in recorded history. I’m so glad it didn’t get worse in our basement! Lots of power outages but we kept ours. I’m sure the basement would have totally flooded without the sump pump. I wonder how our neighbors did?</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 10: If your day today was a playlist, what would be the first 3 songs?</strong></p>
-<ol>
-<li>Set Fire to the Rain — Adele</li>
-<li>Dog Days Are Over — Florence + the Machine</li>
-<li>Up All Night — Owl City (’Cuz floods and rain and I’m tired.)</li>
-</ol>
-<h2>📌 Summary</h2>
-<ul>
-<li>⚠️ <strong>Short sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm_post</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: tired but relieved</li>
-<li>🏷️ <strong>Tags</strong>: #flooding #home #storm</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 9, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/09/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/09/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-09T00:00:00Z</updated>
-    <published>2025-08-09T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#coding" />
-      
-        <category term="#journal" />
-      
-        <category term="#weather-tracking" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] laundry</li>
-<li>[x] new app dev</li>
-<li>[x] TCMC B-day sale</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 14 min — 78% fair</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] s.m. post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[ ] no spend</li>
-<li>[x] CM + H logs</li>
-<li>[ ] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>behemoth</strong> <em>(noun)</em></p>
-<ul>
-<li>something of monstrous size, power, or appearance</li>
-<li>biblical: a mighty animal described in the book of Job</li>
-</ul>
-<blockquote>
-<p>The town will be voting on whether or not to let the retail behemoth build a store on the proposed site.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>Backfill: I spent the whole day on a new project. I finally figured out an easy workflow. I put the code on GitHub as a repository and then open the code space to edit the code. From there I use a Live Server extension to test all my changes — quick and easy in another browser window. I can even use my iPad, which is mainly what I use daily anywhere. I made lots of progress and figured out how to commit changes to Git as I went. I’m creating a super fun tool for anyone who wants to track their weather in a planner or journal.</p>
-<p>I’m doing most of the code in JavaScript, which I’m honestly not super familiar with, but this project isn’t super complex — it’s layout heavy. So it’s fun to learn as I go. The more I change, the more I understand it. I’m thinking I can make a few of the styles available free, then maybe add a one-time paid upgrade to unlock more themes and options. IDK — I’ve never sold a code project like this before. I’ve made tools for myself, but if it breaks I can either abandon it or try to fix it. IDK if I’d be all that helpful in a “tech support” scenario. I’ll just wait and see how I feel once it’s finished.</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>⚠️ <strong>Short sleep</strong> (under 8h15m)</li>
-<li>⚠️ <strong>Missed habits</strong>: sm_post, no_spend, yoga/movement</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: productive and focused</li>
-<li>🏷️ <strong>Tags</strong>: #coding #journal #weather-tracking</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 8, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/08/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/08/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-08T00:00:00Z</updated>
-    <published>2025-08-08T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#journaling" />
-      
-        <category term="#daily_log" />
-      
-        <category term="#planner" />
-      
-        <category term="#headache" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] Bath</li>
-<li>[x] Mail orders</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 23 min — 84% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] S.M. Post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] CM+H logs</li>
-<li>[ ] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>winsome</strong> <em>(adjective)</em></p>
-<ul>
-<li>describes people + things that are cheerful, pleasant, and appealing</li>
-</ul>
-<blockquote>
-<p>Though a relative newcomer to acting, Maya won the casting directors over with her winsome charm, which was perfect for the role of a plucky young superhero.<br>
-Our winsome guide put us at ease immediately.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>I had a terrible time trying to fall asleep last night. I just couldn’t relax. IDK if it’s dental appt anxiety or what, but that isn’t until next week. Terribly annoying. So I started today with a super relaxing bath. Just want to wash away the bad vibes. I think I’ll take it kind of slow today. Might do some fun coding but nothing super taxing. I just don’t have a lot of extra mental resources right now. Plus I’ve already released 2 new sticker sheets so far this month. That’s quite good for me!</p>
-<p>Later: I got a terrible headache so the rest of the day was mostly a wash. I was trying to teach myself more code stuff. Then me and M. decided to go out for dinner and I realized my head hurt. It didn’t get worse though so I’m surviving… just tired I guess. Yuck.</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 8:</strong> If you could rename one everyday object to something sillier, what would you call it?<br>
-Like calling a fork a “dinglehopper” in <em>The Little Mermaid</em>. Well I recently used a “gentle” exfoliator and think a better name might be Pain Paste. (It was shockingly aggressive.)</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm_post, yoga_movement</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: tired but mildly productive</li>
-<li>🏷️ <strong>Tags</strong>: #journaling #daily_log #planner #headache</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 7, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/07/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/07/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-07T00:00:00Z</updated>
-    <published>2025-08-07T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#productivity" />
-      
-        <category term="#creative" />
-      
-        <category term="#planner_shop" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] work</li>
-<li>[x] mail order</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 50 min — 82% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] s.m. post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] CM + H logs</li>
-<li>[x] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>adjudicate</strong> <em>(verb)</em></p>
-<ul>
-<li>to make an official decision about who is right in (a dispute)</li>
-<li>to act as a judge</li>
-</ul>
-<blockquote>
-<p><em>The case will be adjudicated in the state courts.</em><br>
-<em>The property title cannot be transferred until a case concerning the affected rights of way is adjudicated.</em></p>
-</blockquote>
-<h2>Journal</h2>
-<p>Yesterday was surprisingly productive. I designed, printed, and cut a whole new sticker sheet. Whoa! I eventually found the missing Apple Pencil and was inspired to make a sheet about clutter and disorganization. I love it! I just need to take product photos and then it can go live. Might be one of my fastest sheets ever with fresh artwork. Nothing is more inspiring than actual lived experience for me. I can feel if the message is being conveyed properly in my bones, I gotta remember to use that more often. It just feels good to process life through art that way. Like my life has more meaning than just something I experience alone.</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 7: What's your personal &quot;comfy clothes&quot; uniform?</strong><br>
-I never understood this growing up — it felt like all clothes were the same comfort (except for tight jeans). Then I grew up, gained a little weight. Man, everything digs and pulls and feels weird! If I can go a whole day with no bra (or light bralette), pajama shirt, and sweatpants, I'm very happy. I always take off my “outside clothes” first thing when I'm home for the day now. It's sooo much better. Jeans are the worst.</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm post</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: inspired and productive</li>
-<li>🏷️ <strong>Tags</strong>: #productivity #creative #planner_shop</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 6, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/06/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/06/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-06T00:00:00Z</updated>
-    <published>2025-08-06T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#lostthings" />
-      
-        <category term="#stationeryshop" />
-      
-        <category term="#overwhelm" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] HF delivery</li>
-<li>[x] mail order</li>
-<li>[ ] s.m. post → moved to 2025-08-07</li>
-<li>[x] bath</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 30 min, 87% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] sm. post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] CM + H logs</li>
-<li>[ ] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>largesse</strong> <em>(noun)</em></p>
-<ul>
-<li>A somewhat formal word that refers to the act of giving away money or the generosity of a person who gives away money</li>
-</ul>
-<blockquote>
-<p><em>The community has benefited greatly from the largesse of its wealthiest family.</em><br>
-<em>The local business owner is a philanthropist known for his largesse.</em></p>
-</blockquote>
-<h2>Journal</h2>
-<p>I lost my Apple Pencil again and I can’t find it anywhere. I really wish the Magic Keyboard case had a secure spot for it. The magnet is totally unreliable. And it always hides once it falls off. It’s never just on the floor near the iPad or anything easy like that. And I don’t have the version with Find My device detection either.<br>
-Plus I just have zero storage space to organize all my stuff. So that makes the search a lot more frustrating and difficult. Running a stationery shop out of your bedroom is NOT ideal.</p>
-<h2>Prompt</h2>
-<p><strong>Prompt 6: When was the last time you laughed so hard you couldn’t breathe?</strong><br>
-Well I can remember a recent cry and laugh combo. I was talking about how I struggle to say yes to new things and new people. And they said “Your brain runs on binding contracts. Yes = now I’ve agreed to coffee every month until one of us dies.” It sounds so silly and ridiculous but it resonated so hard that I just cried and laughed about the weirdness that is my brain. Like that’s obviously ridiculous… a yes does not equal a lifetime contract, but for some reason that’s what I think.</p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong> (8 hr 30 min)</li>
-<li>⚠️ <strong>Missed habits</strong>: sm_post, yoga/movement</li>
-<li>⚠️ <strong>One task incomplete</strong></li>
-<li>✨ <strong>Mood</strong>: frustrated and scattered</li>
-<li>🏷️ <strong>Tags</strong>: #lostthings #stationeryshop #overwhelm</li>
-</ul>
-
-    ]]></content>
-  </entry>
-  
-  <entry>
-    <title>August 5, 2025</title>
-
-    <!-- canonical id + link -->
-    <id>https://journal.judywinsor.com/journal/2025/08/05/</id>
-    <link rel="alternate" href="https://journal.judywinsor.com/journal/2025/08/05/" type="text/html" />
-
-    <!-- dates -->
-    <updated>2025-08-05T00:00:00Z</updated>
-    <published>2025-08-05T00:00:00Z</published>
-
-    <!-- author -->
-    <author><name>Judy Winsor</name></author>
-
-    <!-- tags -->
-    
-      
-        <category term="#reflection" />
-      
-        <category term="#mental_health" />
-      
-        <category term="#journaling" />
-      
-    
-
-    <!-- full HTML content -->
-    <content type="html"><![CDATA[
-      <h2>Tasks</h2>
-<ul>
-<li>[x] mail order</li>
-</ul>
-<h2>Sleep</h2>
-<ul>
-<li>8 hr 23 min, 84% good</li>
-</ul>
-<h2>Habits</h2>
-<ul>
-<li>[x] am meds</li>
-<li>[x] planner fill</li>
-<li>[ ] sm post</li>
-<li>[x] shop orders</li>
-<li>[x] noon meds</li>
-<li>[x] no spend</li>
-<li>[x] cm + h logs</li>
-<li>[ ] yoga/movement</li>
-</ul>
-<h2>Word</h2>
-<p><strong>Contentious</strong> <em>(adj.)</em></p>
-<ul>
-<li>describing something that is likely to cause people to argue or disagree or that involves a lot of arguing.</li>
-<li>For a person: someone likely or willing to argue</li>
-</ul>
-<blockquote>
-<p>I think it's wise to avoid such a contentious topic at a dinner party.<br>
-The dispute involves one of the region's most contentious leaders.</p>
-</blockquote>
-<h2>Journal</h2>
-<p>Had a bit of an emotional day yesterday. Someone I used to work with came into work and told me some news, which wasn't a big deal in itself. It was just on the 40 min drive home while my mind wandered. I was just comparing my life and wondering why mine was so different… wondering if I missed my chances… wondering why some things just don't work out how you hope they would… and so on. Just feeling overwhelmed by emotions in general. I think I just needed a good cry to reset and get it out. I know comparison is pointless and unhelpful. It just snuck up on me. I am still grieving various things and sometimes you just gotta get it out. I think I feel better today. I think I handled the emotions well and processed some stuff that was building up. Key takeaway: It's okay to feel old negative thoughts, but then be sure to let them go. You can't just DENY them away because you're &quot;not supposed&quot; to think them. Negative stuff just happens. Old brain programming doesn't just disappear overnight. Feel it, then reframe it and move on. I think sometimes you hear advice like &quot;comparison is the thief of joy,&quot; so then maybe you feel guilty when you accidentally compare yourself to others. But that's not helpful either. It's okay, and you can get through it.</p>
-<h2>Prompt</h2>
-<p><strong>No prompt recorded</strong></p>
-<h2>📌 Summary</h2>
-<ul>
-<li>✅ <strong>Great sleep</strong></li>
-<li>⚠️ <strong>Missed habits</strong>: sm post, yoga/movement</li>
-<li>✅ <strong>All tasks completed</strong></li>
-<li>✨ <strong>Mood</strong>: reflective</li>
-<li>🏷️ <strong>Tags</strong>: #reflection #mental_health #journaling</li>
 </ul>
 
     ]]></content>
