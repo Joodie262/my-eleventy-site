@@ -391,6 +391,7 @@ Each month’s prompts will be added as it approaches.</p>
 </ol>
 </details><br />
 </div>
+<details>
 <summary><span class="h4">December</span></summary>
 <ol>
   <li>What’s your “first sign it’s December” moment each year?</li>
