@@ -391,3 +391,39 @@ Each month’s prompts will be added as it approaches.</p>
 </ol>
 </details><br />
 </div>
+<summary><span class="h4">December</span></summary>
+<ol>
+  <li>What’s your “first sign it’s December” moment each year?</li>
+  <li>If you could add one completely unnecessary magical feature to your home for winter, what would it be?</li>
+  <li>What’s a winter smell that instantly boosts your mood?</li>
+  <li>If you could bottle the feeling of December, what would the label say?</li>
+  <li>What tiny tradition (even weird ones) makes this month feel special to you?</li>
+  <li>What’s a winter treat you’d happily eat for breakfast if no one judged you?</li>
+  <li>If you had a personal North Pole department, what would it be in charge of?</li>
+  <li>What’s your go-to cozy move when the weather gets chaotic?</li>
+  <li>Which object in your home deserves a “holiday MVP” award this year?</li>
+  <li>If you could invent a December-only superpower, what would it help you do?</li>
+  <li>What’s your winter “comfort uniform,” and why does it work so well?</li>
+  <li>What’s a tiny moment from this season that made you unexpectedly happy?</li>
+  <li>If you could rewrite one classic holiday trope, how would you change it?</li>
+  <li>What’s a winter activity you secretly do the lazy version of?</li>
+  <li>What fictional character would you most want to spend a snow day with?</li>
+  <li>What’s your ideal “hibernation day” setup?</li>
+  <li>What’s one winter chore you’d instantly outsource to a friendly forest spirit?</li>
+  <li>What’s the funniest or oddest thing you’ve ever done to feel festive?</li>
+  <li>What’s a cozy task you actually enjoy more than you admit?</li>
+  <li>If you could freeze one tiny good moment from this month like a snow globe scene, which would it be?</li>
+  <li>Which winter item (scarf, mug, candle, blanket) has become part of your personality this year?</li>
+  <li>If you could give “future you” one small December reminder, what would it be?</li>
+  <li>If you could create a brand-new mini holiday, what would it celebrate?</li>
+  <li>What small joy has surprised you lately?</li>
+  <li>If you could receive one non-material gift today, what would it be?</li>
+  <li>What pointless rule would you establish for “the last week of the year”?</li>
+  <li>What comfort show, movie, or book becomes elite-tier in December for you?</li>
+  <li>What’s something from this year you want to pack into your metaphorical carry-on for next year?</li>
+  <li>What’s a tiny tradition you’d like to start on January 1st, just for fun?</li>
+  <li>If this year had credits rolling, what would your blooper reel include?</li>
+  <li>What’s your 2025 tagline—humorous, dramatic, poetic, whatever fits?</li>
+</ol>
+</details><br />
+</div>
